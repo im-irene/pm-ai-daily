@@ -104,7 +104,7 @@ function card(item) {
     ${stats.length ? `<div class="card-stats">${stats.join('')}</div>` : ''}
     ${summaryText ? `
     <div class="summary-panel hidden">${esc(summaryText)}</div>
-    <button class="summary-toggle" onclick="toggleSummary(this)">查看摘要</button>
+    <button class="summary-toggle" onclick="toggleSummary(this)">查看總結</button>
     ` : ''}
   </article>`;
 }
@@ -112,7 +112,7 @@ function card(item) {
 function toggleSummary(btn) {
   const panel = btn.previousElementSibling;
   const collapsed = panel.classList.toggle('hidden');
-  btn.textContent = collapsed ? '查看摘要' : '收起摘要';
+  btn.textContent = collapsed ? '查看總結' : '收起總結';
 }
 
 function badge(item) {
