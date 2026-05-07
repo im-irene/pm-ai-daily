@@ -99,36 +99,38 @@ def detect_content_type(title, source_type):
 # ── Scrapers ──────────────────────────────────────────────────────────────
 
 def fetch_reddit(subreddit, default_category):
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=15"
+    url = f"https://www.reddit.com/r/{subreddit}/hot.rss?limit=15"
+    rss_headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    }
     try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
-        r.raise_for_status()
-        posts = r.json()["data"]["children"]
+        feed = feedparser.parse(url, request_headers=rss_headers)
+        if not feed.entries:
+            raise ValueError("empty feed")
     except Exception as e:
         print(f"  [Reddit/{subreddit}] Error: {e}", file=sys.stderr)
         return []
 
     items = []
-    for post in posts:
-        p = post["data"]
-        if p.get("stickied"):
-            continue
-        created = datetime.fromtimestamp(p["created_utc"], tz=timezone.utc)
+    for entry in feed.entries[:15]:
+        title = entry.get("title", "").strip()
+        parsed_time = entry.get("published_parsed") or entry.get("updated_parsed")
+        created = datetime(*parsed_time[:6], tzinfo=timezone.utc) if parsed_time else now_utc()
         if created < cutoff_dt():
             continue
-        title = p.get("title", "").strip()
+        post_id = short_hash(entry.get("link", title))
         items.append({
-            "id": f"reddit_{p['id']}",
+            "id": f"reddit_{post_id}",
             "title": title,
-            "url": f"https://www.reddit.com{p['permalink']}",
+            "url": entry.get("link", ""),
             "source": f"r/{subreddit}",
             "source_type": "reddit",
             "category": default_category,
             "content_type": detect_content_type(title, "reddit"),
             "published_at": created.isoformat(),
-            "score": p.get("score", 0),
-            "comments": p.get("num_comments", 0),
-            "summary": p.get("selftext", "")[:300].strip(),
+            "score": 0,
+            "comments": 0,
+            "summary": entry.get("summary", "")[:300].strip(),
             "title_zh": "",
             "summary_zh": "",
         })
