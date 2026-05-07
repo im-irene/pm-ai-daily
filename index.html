@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM × AI Daily</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <span class="site-title">PM × AI Daily</span>
+      <span class="updated-at" id="updated-at">--</span>
+    </div>
+  </header>
+
+  <nav class="filter-nav">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="tab active" data-filter="all">
+          全部 <span class="count" id="count-all">0</span>
+        </button>
+        <button class="tab" data-filter="pm">
+          PM <span class="count" id="count-pm">0</span>
+        </button>
+        <button class="tab" data-filter="ai">
+          AI <span class="count" id="count-ai">0</span>
+        </button>
+        <button class="tab" data-filter="community">
+          社群討論 <span class="count" id="count-community">0</span>
+        </button>
+        <button class="tab" data-filter="producthunt">
+          Product Hunt <span class="count" id="count-producthunt">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="main">
+    <div class="loading" id="loading">載入中...</div>
+    <div id="news-list" class="hidden"></div>
+    <div id="empty-state" class="empty-state hidden">
+      <p class="empty-title">尚無資料</p>
+      <p class="empty-desc">每日 09:00（台灣時間）自動更新<br>或前往 GitHub Actions 手動觸發</p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
