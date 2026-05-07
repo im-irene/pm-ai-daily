@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""PM x AI Daily — news scraper"""
+"""PM x AI Daily — news scraper with content-type tagging and Claude translation"""
 
 import hashlib
 import json
 import os
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -47,9 +48,6 @@ HN_QUERIES = [
     ("artificial intelligence", "ai"),
 ]
 
-# (url, display_name, source_type, fallback_category)
-# fallback_category=None → skip if no AI/PM keyword match
-# fallback_category="product" → keep anyway (e.g. Product Hunt)
 RSS_SOURCES = [
     ("https://www.producthunt.com/feed", "Product Hunt", "producthunt", "product"),
     ("https://techcrunch.com/feed/", "TechCrunch", "rss", None),
@@ -59,9 +57,7 @@ RSS_SOURCES = [
 
 HEADERS = {"User-Agent": "Mozilla/5.0 PM-AI-Daily/1.0 (github.com)"}
 DAYS_TO_KEEP = 3
-REDDIT_LIMIT = 15
-HN_LIMIT = 10
-RSS_LIMIT = 20
+TRANSLATE_BATCH = 8
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────
@@ -83,11 +79,27 @@ def categorize(title, desc=""):
         return None
     return "pm" if pm_score >= ai_score else "ai"
 
+def detect_content_type(title, source_type):
+    """Classify content into readable type labels."""
+    if source_type == "producthunt":
+        return "產品發布"
+    if source_type == "reddit":
+        return "社群討論"
+    if source_type == "hn":
+        if title.startswith("Show HN:"):
+            return "作品展示"
+        if title.startswith("Ask HN:"):
+            return "問答討論"
+        return "技術新聞"
+    if source_type == "rss":
+        return "產業新聞"
+    return "新聞"
+
 
 # ── Scrapers ──────────────────────────────────────────────────────────────
 
 def fetch_reddit(subreddit, default_category):
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit={REDDIT_LIMIT}"
+    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=15"
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
         r.raise_for_status()
@@ -104,17 +116,21 @@ def fetch_reddit(subreddit, default_category):
         created = datetime.fromtimestamp(p["created_utc"], tz=timezone.utc)
         if created < cutoff_dt():
             continue
+        title = p.get("title", "").strip()
         items.append({
             "id": f"reddit_{p['id']}",
-            "title": p.get("title", "").strip(),
+            "title": title,
             "url": f"https://www.reddit.com{p['permalink']}",
             "source": f"r/{subreddit}",
             "source_type": "reddit",
             "category": default_category,
+            "content_type": detect_content_type(title, "reddit"),
             "published_at": created.isoformat(),
             "score": p.get("score", 0),
             "comments": p.get("num_comments", 0),
             "summary": p.get("selftext", "")[:300].strip(),
+            "title_zh": "",
+            "summary_zh": "",
         })
     return items
 
@@ -125,7 +141,7 @@ def fetch_hn(query, category):
         f"https://hn.algolia.com/api/v1/search"
         f"?query={query}&tags=story"
         f"&numericFilters=created_at_i>{cutoff_ts}"
-        f"&hitsPerPage={HN_LIMIT}"
+        f"&hitsPerPage=10"
     )
     try:
         r = requests.get(url, timeout=15)
@@ -137,17 +153,21 @@ def fetch_hn(query, category):
 
     items = []
     for h in hits:
+        title = h.get("title", "")
         items.append({
             "id": f"hn_{h['objectID']}",
-            "title": h.get("title", ""),
+            "title": title,
             "url": h.get("url") or f"https://news.ycombinator.com/item?id={h['objectID']}",
             "source": "Hacker News",
             "source_type": "hn",
             "category": category,
+            "content_type": detect_content_type(title, "hn"),
             "published_at": h.get("created_at", now_utc().isoformat()),
             "score": h.get("points", 0),
             "comments": h.get("num_comments", 0),
             "summary": "",
+            "title_zh": "",
+            "summary_zh": "",
         })
     return items
 
@@ -160,7 +180,7 @@ def fetch_rss(feed_url, source_name, source_type, fallback_category):
         return []
 
     items = []
-    for entry in feed.entries[:RSS_LIMIT]:
+    for entry in feed.entries[:20]:
         title = entry.get("title", "").strip()
         summary = entry.get("summary", "")[:300].strip()
 
@@ -182,12 +202,72 @@ def fetch_rss(feed_url, source_name, source_type, fallback_category):
             "source": source_name,
             "source_type": source_type,
             "category": cat,
+            "content_type": detect_content_type(title, source_type),
             "published_at": dt.isoformat(),
             "score": 0,
             "comments": 0,
             "summary": summary,
+            "title_zh": "",
+            "summary_zh": "",
         })
     return items
+
+
+# ── Translation ───────────────────────────────────────────────────────────
+
+def translate_batch(batch, client):
+    """Send a batch of items to Claude for Chinese title + summary."""
+    lines = []
+    for i, item in enumerate(batch):
+        lines.append(f"{i+1}. 標題: {item['title']}")
+        if item.get("summary"):
+            lines.append(f"   摘要: {item['summary'][:200]}")
+
+    prompt = (
+        "你是台灣科技媒體編輯，請將以下英文文章資訊翻譯成繁體中文。\n\n"
+        "要求：\n"
+        "- title_zh：自然流暢的繁體中文標題（符合台灣媒體風格）\n"
+        "- summary_zh：2-3 句說明文章重點的繁體中文摘要\n\n"
+        "直接回傳 JSON array，不加任何說明文字：\n"
+        '[{"title_zh": "...", "summary_zh": "..."}, ...]\n\n'
+        "文章列表：\n" + "\n".join(lines)
+    )
+
+    response = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=2048,
+        messages=[{"role": "user", "content": prompt}],
+    )
+
+    text = response.content[0].text
+    match = re.search(r"\[[\s\S]*\]", text)
+    if not match:
+        raise ValueError("No JSON array in response")
+    return json.loads(match.group())
+
+
+def add_translations(items, api_key):
+    try:
+        import anthropic
+    except ImportError:
+        print("  anthropic not installed, skipping translation")
+        return
+
+    client = anthropic.Anthropic(api_key=api_key)
+    total = len(items)
+
+    for start in range(0, total, TRANSLATE_BATCH):
+        batch = items[start:start + TRANSLATE_BATCH]
+        end = start + len(batch)
+        print(f"  Translating {start+1}-{end}/{total}...")
+        try:
+            results = translate_batch(batch, client)
+            for j, t in enumerate(results):
+                if j < len(batch):
+                    batch[j]["title_zh"] = t.get("title_zh", "")
+                    batch[j]["summary_zh"] = t.get("summary_zh", "")
+        except Exception as e:
+            print(f"  Batch {start//TRANSLATE_BATCH+1} failed: {e}", file=sys.stderr)
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
@@ -224,6 +304,14 @@ def main():
     # Sort newest first
     unique.sort(key=lambda x: x["published_at"], reverse=True)
 
+    # Translate (requires ANTHROPIC_API_KEY)
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if api_key:
+        print(f"\nTranslating {len(unique)} items with Claude...")
+        add_translations(unique, api_key)
+    else:
+        print("\nNo ANTHROPIC_API_KEY — skipping translation")
+
     os.makedirs("data", exist_ok=True)
     output = {
         "updated_at": now_utc().isoformat(),
@@ -233,7 +321,7 @@ def main():
     with open("data/news.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\nTotal: {len(unique)} items saved to data/news.json")
+    print(f"\nDone: {len(unique)} items saved to data/news.json")
 
 
 if __name__ == "__main__":

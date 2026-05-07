@@ -85,17 +85,23 @@ function card(item) {
   if (item.score > 0)    stats.push(`<span>&#9650; ${fmt(item.score)}</span>`);
   if (item.comments > 0) stats.push(`<span># ${fmt(item.comments)}</span>`);
 
+  const mainTitle   = item.title_zh  || item.title;
+  const subTitle    = item.title_zh  ? item.title : '';
+  const summaryText = item.summary_zh || item.summary || '';
+
   return `<article class="news-card">
     <div class="card-meta">
       ${badge(item)}
+      ${item.content_type ? `<span class="badge badge-type">${esc(item.content_type)}</span>` : ''}
       <span class="src-type">${srcTypeLabel(item.source_type)}</span>
       <span class="src-name">${esc(item.source)}</span>
       <span class="card-time">${relTime(item.published_at)}</span>
     </div>
     <div class="card-title">
-      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a>
+      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(mainTitle)}</a>
     </div>
-    ${item.summary ? `<div class="card-summary">${esc(item.summary)}</div>` : ''}
+    ${subTitle ? `<div class="card-title-en">${esc(subTitle)}</div>` : ''}
+    ${summaryText ? `<div class="card-summary">${esc(summaryText)}</div>` : ''}
     ${stats.length ? `<div class="card-stats">${stats.join('')}</div>` : ''}
   </article>`;
 }

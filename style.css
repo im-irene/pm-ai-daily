@@ -163,6 +163,7 @@ main {
 .badge-pm      { background: rgba(88, 166, 255, 0.12); color: var(--blue); }
 .badge-ai      { background: rgba(188, 140, 255, 0.12); color: var(--purple); }
 .badge-product { background: rgba(255, 166, 87, 0.12); color: var(--amber); }
+.badge-type    { background: rgba(255,255,255,0.05); color: var(--muted); font-weight: 500; }
 
 /* Source type pill */
 .src-type {
@@ -202,6 +203,17 @@ main {
   text-decoration: none;
 }
 .card-title a:hover { color: var(--blue); }
+
+/* Original English title (shown as subtitle when Chinese title exists) */
+.card-title-en {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 4px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* Summary */
 .card-summary {
