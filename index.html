@@ -11,55 +11,57 @@
 <body>
 
   <header>
-    <div class="container header-content">
+    <div class="header-content">
       <span class="site-title">PM × AI Daily</span>
       <span class="updated-at" id="updated-at">--</span>
     </div>
   </header>
 
-  <nav class="filter-nav">
-    <!-- 分類 -->
-    <div class="filter-group">
-      <span class="filter-label">分類</span>
-      <div class="filter-tabs" id="cat-tabs">
-        <button class="tab active" data-cat="all">全部 <span class="count">0</span></button>
-        <button class="tab" data-cat="pm">PM <span class="count">0</span></button>
-        <button class="tab" data-cat="ai">AI <span class="count">0</span></button>
-      </div>
-    </div>
-    <!-- 類型 -->
-    <div class="filter-group">
-      <span class="filter-label">類型</span>
-      <div class="filter-tabs" id="type-tabs">
-        <button class="tab active" data-type="all">全部 <span class="count">0</span></button>
-        <button class="tab" data-type="產業新聞">產業新聞 <span class="count">0</span></button>
-        <button class="tab" data-type="社群討論">社群討論 <span class="count">0</span></button>
-        <button class="tab" data-type="技術新聞">技術新聞 <span class="count">0</span></button>
-        <button class="tab" data-type="產品發布">產品發布 <span class="count">0</span></button>
-        <button class="tab" data-type="作品展示">作品展示 <span class="count">0</span></button>
-      </div>
-    </div>
-    <!-- 時間 -->
-    <div class="filter-group">
-      <span class="filter-label">時間</span>
-      <div class="filter-tabs" id="date-tabs">
-        <button class="tab active" data-date="all">全部 <span class="count">0</span></button>
-        <button class="tab" data-date="today">今日 <span class="count">0</span></button>
-        <button class="tab" data-date="yesterday">昨日 <span class="count">0</span></button>
-        <button class="tab" data-date="earlier">更早 <span class="count">0</span></button>
-      </div>
-      <div class="date-range-wrap">
-        <input type="date" id="date-from" class="date-input" title="起始日期">
-        <span class="date-sep">–</span>
-        <input type="date" id="date-to" class="date-input" title="結束日期">
-        <button class="date-clear" id="date-clear" title="清除">&#x2715;</button>
-      </div>
-    </div>
-  </nav>
-
   <div class="layout">
 
-    <!-- 左側：文章清單 -->
+    <!-- 左側：篩選欄 -->
+    <aside class="filter-sidebar">
+
+      <div class="filter-section">
+        <span class="filter-label">分類</span>
+        <div class="filter-col" id="cat-tabs">
+          <button class="tab active" data-cat="all">全部 <span class="count">0</span></button>
+          <button class="tab" data-cat="pm">PM <span class="count">0</span></button>
+          <button class="tab" data-cat="ai">AI <span class="count">0</span></button>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <span class="filter-label">類型</span>
+        <div class="filter-col" id="type-tabs">
+          <button class="tab active" data-type="all">全部 <span class="count">0</span></button>
+          <button class="tab" data-type="產業新聞">產業新聞 <span class="count">0</span></button>
+          <button class="tab" data-type="社群討論">社群討論 <span class="count">0</span></button>
+          <button class="tab" data-type="技術新聞">技術新聞 <span class="count">0</span></button>
+          <button class="tab" data-type="產品發布">產品發布 <span class="count">0</span></button>
+          <button class="tab" data-type="作品展示">作品展示 <span class="count">0</span></button>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <span class="filter-label">時間</span>
+        <div class="filter-col" id="date-tabs">
+          <button class="tab active" data-date="all">全部 <span class="count">0</span></button>
+          <button class="tab" data-date="today">今日 <span class="count">0</span></button>
+          <button class="tab" data-date="yesterday">昨日 <span class="count">0</span></button>
+          <button class="tab" data-date="earlier">更早 <span class="count">0</span></button>
+        </div>
+        <div class="date-range-wrap">
+          <input type="date" id="date-from" class="date-input" title="起始日期">
+          <span class="date-sep">–</span>
+          <input type="date" id="date-to" class="date-input" title="結束日期">
+          <button class="date-clear" id="date-clear" title="清除">&#x2715;</button>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- 中間：文章清單 -->
     <div class="list-panel" id="list-panel">
       <div class="loading" id="loading">載入中...</div>
       <div id="news-list" class="hidden"></div>
@@ -73,7 +75,7 @@
     <div class="detail-panel" id="detail-panel">
       <div id="detail-placeholder" class="detail-placeholder">
         <div class="placeholder-arrow">&#8592;</div>
-        <p>點選左側文章</p>
+        <p>點選文章</p>
         <p class="placeholder-hint">查看 Claude 閱讀總結</p>
       </div>
       <div id="detail-content" class="hidden"></div>
