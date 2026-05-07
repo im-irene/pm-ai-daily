@@ -1,7 +1,22 @@
 {
-  "updated_at": "2026-05-07T06:43:39.030063+00:00",
-  "total": 57,
+  "updated_at": "2026-05-07T07:05:37.149575+00:00",
+  "total": 61,
   "items": [
+    {
+      "id": "hn_48046259",
+      "title": "Stackit and neuland.ai aim to provide LLMs in European data centers",
+      "url": "https://www.heise.de/en/news/Sovereign-AI-from-Germany-11284778.html",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "category": "ai",
+      "content_type": "技術新聞",
+      "published_at": "2026-05-07T06:53:36Z",
+      "score": 1,
+      "comments": 0,
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
+    },
     {
       "id": "rss_bd6c9177",
       "title": "Five architects of the AI economy explain where the wheels are coming off",
@@ -9,10 +24,28 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-07T05:25:10+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Earlier this week, five people who touch every layer of the AI supply chain sat down at the Milken Global Conference in Beverly Hills, where they talked with TechCrunch about everything from chip shortages to orbital data centers to the possibility that the whole architecture that undergirds the tec"
+      "summary": "Earlier this week, five people who touch every layer of the AI supply chain sat down at the Milken Global Conference in Beverly Hills, where they talked with TechCrunch about everything from chip shortages to orbital data centers to the possibility that the whole architecture that undergirds the tec",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_8e05d018",
+      "title": "Neo by Amp",
+      "url": "https://www.producthunt.com/products/amp-free",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-07T03:22:56+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            The Amp CLI has been rebuilt from the ground up\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/amp-free?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48044920",
@@ -21,10 +54,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-07T02:56:49Z",
       "score": 4,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48044604",
@@ -33,10 +69,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-07T02:12:13Z",
       "score": 5,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_f2594370",
@@ -45,10 +84,28 @@
       "source": "The Verge",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T23:37:02+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "I sat down in the Musk v. Altman trial courtroom today, painfully aware that no one was going to ask Shivon Zilis the question on everyone's minds: Girl, what the fuck are you doing? Zilis, who testified under oath that she is the mother of four of Musk's children, was… what's the best way to [&#823"
+      "summary": "I sat down in the Musk v. Altman trial courtroom today, painfully aware that no one was going to ask Shivon Zilis the question on everyone's minds: Girl, what the fuck are you doing? Zilis, who testified under oath that she is the mother of four of Musk's children, was… what's the best way to [&#823",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_edd0f2ce",
+      "title": "Basedash MCP server",
+      "url": "https://www.producthunt.com/products/basedash",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T22:31:59+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Your data analyst, in every AI tool you already use\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/basedash?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_385a5085",
@@ -57,10 +114,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T22:30:00+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "The investment comes as Pronto scales to 26,000 daily bookings and the market heads toward a potential $18 billion size."
+      "summary": "The investment comes as Pronto scales to 26,000 daily bookings and the market heads toward a potential $18 billion size.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_f05f5c0e",
@@ -69,10 +129,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T21:57:56+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Barry Diller defended OpenAI CEO Sam Altman, while warning that AGI remains an unpredictable force needing guardrails."
+      "summary": "Barry Diller defended OpenAI CEO Sam Altman, while warning that AGI remains an unpredictable force needing guardrails.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_f863a8c5",
@@ -81,10 +144,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T21:43:24+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "The deal, announced last November, would have seen Perplexity's AI search engine integrated directly into Snapchat."
+      "summary": "The deal, announced last November, would have seen Perplexity's AI search engine integrated directly into Snapchat.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_8b600010",
@@ -93,10 +159,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T21:32:55+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "xAI's real business may be more about building data centers than training AI models."
+      "summary": "xAI's real business may be more about building data centers than training AI models.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_90697f76",
@@ -105,10 +174,28 @@
       "source": "The Verge",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T21:21:45+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Google has pulled the plug on Project Mariner, an experimental feature designed to perform tasks for you across the web, as reported earlier by Wired's Maxwell Zeff. The Project Mariner landing page now contains a message that says: \"Thank you for using Project Mariner. It was shut down on May 4th,"
+      "summary": "Google has pulled the plug on Project Mariner, an experimental feature designed to perform tasks for you across the web, as reported earlier by Wired's Maxwell Zeff. The Project Mariner landing page now contains a message that says: \"Thank you for using Project Mariner. It was shut down on May 4th,",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_821690b9",
+      "title": "Forge",
+      "url": "https://www.producthunt.com/products/forge-20",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T21:05:32+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            A complete React toolkit made for AI\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/forge-20?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_1bd99ffe",
@@ -117,10 +204,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T19:57:31+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "The push for new data centers at Microsoft is putting its key clean power goals at risk."
+      "summary": "The push for new data centers at Microsoft is putting its key clean power goals at risk.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_12aeba91",
@@ -129,10 +219,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T19:10:09+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Robinhood CEO Vlad Tenev says more than 150,000 retail investors joined the fintech’s new venture fund, which offers exposure to private tech companies like OpenAI, Stripe, Databricks, and Oura before they go public."
+      "summary": "Robinhood CEO Vlad Tenev says more than 150,000 retail investors joined the fintech’s new venture fund, which offers exposure to private tech companies like OpenAI, Stripe, Databricks, and Oura before they go public.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_a1179bcb",
@@ -141,10 +234,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T18:23:54+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Cutthroat negotiations between startup founders are rarely shared so publicly, especially when a company becomes as world-changing as OpenAI."
+      "summary": "Cutthroat negotiations between startup founders are rarely shared so publicly, especially when a company becomes as world-changing as OpenAI.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48039702",
@@ -153,10 +249,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-06T18:22:03Z",
-      "score": 16,
+      "score": 18,
       "comments": 5,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_cb7ba061",
@@ -165,10 +264,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T18:20:21+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "U.S. prosecutors said a ransomware gang fueled Russian government corruption, and allowed the gang's leaders to avoid paying taxes and dodge the country's military draft."
+      "summary": "U.S. prosecutors said a ransomware gang fueled Russian government corruption, and allowed the gang's leaders to avoid paying taxes and dodge the country's military draft.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_5e79e8e1",
@@ -177,10 +279,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T18:05:41+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Braintrust, a startup that makes an “operating system for engineers building AI software,” notified customers that hackers broke into one of its Amazon cloud environments, and is asking customers to rotate their API keys."
+      "summary": "Braintrust, a startup that makes an “operating system for engineers building AI software,” notified customers that hackers broke into one of its Amazon cloud environments, and is asking customers to rotate their API keys.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_6b7453f7",
@@ -189,10 +294,13 @@
       "source": "The Verge",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T18:05:13+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "We’ve been reading your feedback on the new homepage. All of it. The kind and encouraging comments, the brutal ones, the “actually this rules,” the “please undo this immediately,” the bug reports, the feature ideas, and yes, the eternal request for dark mode. We appreciate it. A lot of you took the"
+      "summary": "We’ve been reading your feedback on the new homepage. All of it. The kind and encouraging comments, the brutal ones, the “actually this rules,” the “please undo this immediately,” the bug reports, the feature ideas, and yes, the eternal request for dark mode. We appreciate it. A lot of you took the",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_b4fac8bb",
@@ -201,10 +309,13 @@
       "source": "The Verge",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T17:55:53+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Mira Murati, OpenAI's former CTO, has testified under oath that CEO Sam Altman lied to her about the safety standards for a new AI model. In a video deposition shown during the ongoing Musk v. Altman trial on Wednesday, Murati said Altman falsely stated that OpenAI's legal department determined a ne"
+      "summary": "Mira Murati, OpenAI's former CTO, has testified under oath that CEO Sam Altman lied to her about the safety standards for a new AI model. In a video deposition shown during the ongoing Musk v. Altman trial on Wednesday, Murati said Altman falsely stated that OpenAI's legal department determined a ne",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_e0105768",
@@ -213,10 +324,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T17:20:34+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "The Chinese AI lab came to prominence in early 2025 after launching a large language model that trained on a fraction of the compute power and at a fraction of the cost of the big U.S. models like those from OpenAI and Anthropic."
+      "summary": "The Chinese AI lab came to prominence in early 2025 after launching a large language model that trained on a fraction of the compute power and at a fraction of the cost of the big U.S. models like those from OpenAI and Anthropic.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_5a26dee5",
@@ -225,10 +339,28 @@
       "source": "VentureBeat",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T16:16:49+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>In a world where a viral TikTok video can cause a brand to trend globally in mere hours, the traditional market research cycle — often spanning 12 weeks — is becoming a liability. </p><p>The lag between a survey question and the answers from a wide (or targeted) pool of respondents has become a p"
+      "summary": "<p>In a world where a viral TikTok video can cause a brand to trend globally in mere hours, the traditional market research cycle — often spanning 12 weeks — is becoming a liability. </p><p>The lag between a survey question and the answers from a wide (or targeted) pool of respondents has become a p",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_3f9567c4",
+      "title": "Phrony",
+      "url": "https://www.producthunt.com/products/phrony",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T16:01:01+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Ship AI agents without the operational burden\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/phrony?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_dd166b06",
@@ -237,10 +369,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T15:49:39+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "While citing web forums and discussion boards can help users find answers to more niche queries, this design choice could also prove chaotic."
+      "summary": "While citing web forums and discussion boards can help users find answers to more niche queries, this design choice could also prove chaotic.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_bf34dca8",
@@ -249,10 +384,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T15:46:38+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Genesis AI, a startup that raised a $105 million seed round to build foundational AI for robotics, has unveiled its first model, GENE-26.5, but also a demo showcasing a set of robotic hands performing complex tasks."
+      "summary": "Genesis AI, a startup that raised a $105 million seed round to build foundational AI for robotics, has unveiled its first model, GENE-26.5, but also a demo showcasing a set of robotic hands performing complex tasks.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_a51fcf83",
@@ -261,10 +399,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T15:27:36+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Match Group said that it's slowing its hiring plans for the rest of the year because AI tools \"cost a lot of money.\""
+      "summary": "Match Group said that it's slowing its hiring plans for the rest of the year because AI tools \"cost a lot of money.\"",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_f1f2f2bc",
@@ -273,10 +414,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T15:12:49+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Apple has agreed to pay $250 million to settle a class action lawsuit for overpromising the arrival of Siri's AI features."
+      "summary": "Apple has agreed to pay $250 million to settle a class action lawsuit for overpromising the arrival of Siri's AI features.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_8c823fd2",
@@ -285,10 +429,13 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T15:00:00+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Ethos says it is onboarding 35,000 experts per week."
+      "summary": "Ethos says it is onboarding 35,000 experts per week.",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_5ba30b60",
@@ -297,10 +444,28 @@
       "source": "TechCrunch",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T14:56:55+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "Aurora said it plans to expand to new routes between McLane distribution centers across the U.S. Sun Belt by the end of 2026."
+      "summary": "Aurora said it plans to expand to new routes between McLane distribution centers across the U.S. Sun Belt by the end of 2026.",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_afaf60c3",
+      "title": "reMarkable Paper Pure",
+      "url": "https://www.producthunt.com/products/remarkable-paper-pro",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T13:58:29+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            The reMarkable 2 successor goes back to basics\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/remarkable-paper-pro?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48036128",
@@ -309,10 +474,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "作品展示",
       "published_at": "2026-05-06T13:40:50Z",
       "score": 1,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48035705",
@@ -321,10 +489,28 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-06T12:59:08Z",
       "score": 3,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_54b0fc91",
+      "title": "Saydi",
+      "url": "https://www.producthunt.com/products/saydi",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T11:17:27+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Live voice translation to hear the conversation instantly\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/saydi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_acbf35e0",
@@ -333,34 +519,28 @@
       "source": "VentureBeat",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-06T07:00:00+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p><i>Presented by Nutanix</i></p><hr /><p>Across industries, organizations are focused on how to move from AI pilots, proofs of concept, and cloud-based experimentation to deploying it at scale — across real workloads, for real users, in real business environments. VentureBeat spoke with Tarkan Man"
+      "summary": "<p><i>Presented by Nutanix</i></p><hr /><p>Across industries, organizations are focused on how to move from AI pilots, proofs of concept, and cloud-based experimentation to deploying it at scale — across real workloads, for real users, in real business environments. VentureBeat spoke with Tarkan Man",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
-      "id": "rss_85c79796",
-      "title": "Knowly 1.0",
-      "url": "https://www.producthunt.com/products/knowly-ai",
+      "id": "rss_c2cf9bd1",
+      "title": "GetThis",
+      "url": "https://www.producthunt.com/products/getthis",
       "source": "Product Hunt",
       "source_type": "producthunt",
       "category": "ai",
-      "published_at": "2026-05-06T04:40:53+00:00",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T05:51:47+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>\n            LLM Wiki + NotebookLM, in one closed-loop Proactive AI\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/knowly-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>"
-    },
-    {
-      "id": "rss_07857e96",
-      "title": "Ads in ChatGPT",
-      "url": "https://www.producthunt.com/products/chatgpt",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "published_at": "2026-05-06T03:17:32+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Create, manage, and measure your ChatGPT ad campaigns\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/chatgpt?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>"
+      "summary": "<p>\n            Turn voice, text, or screenshots into tasks.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/getthis?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48031086",
@@ -369,10 +549,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-06T01:34:04Z",
       "score": 3,
       "comments": 1,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_8ad0be42",
@@ -381,10 +564,13 @@
       "source": "VentureBeat",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-05T23:30:14+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>A little-known Miami-based startup called <a href=\"https://subq.ai/\">Subquadratic</a> emerged from stealth on Tuesday with a sweeping claim: that it has built the first large language model to fully escape the mathematical constraint that has defined — and limited — every major AI system since 20"
+      "summary": "<p>A little-known Miami-based startup called <a href=\"https://subq.ai/\">Subquadratic</a> emerged from stealth on Tuesday with a sweeping claim: that it has built the first large language model to fully escape the mathematical constraint that has defined — and limited — every major AI system since 20",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_ccb6fa17",
@@ -393,22 +579,13 @@
       "source": "VentureBeat",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-05T23:26:21+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>OpenAI updated the default model for ChatGPT to its new GPT-5.5 Instant, along with a new memory capability that finally shows which context shaped responses — at least some of them. </p><p>This limitation signals that models are starting to create a second, incomplete memory observability layer"
-    },
-    {
-      "id": "rss_0ffdd302",
-      "title": "DevAlly",
-      "url": "https://www.producthunt.com/products/devally",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "published_at": "2026-05-05T22:10:01+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            AI powered accessibility compliance for teams who ship fast \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/devally?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>"
+      "summary": "<p>OpenAI updated the default model for ChatGPT to its new GPT-5.5 Instant, along with a new memory capability that finally shows which context shaped responses — at least some of them. </p><p>This limitation signals that models are starting to create a second, incomplete memory observability layer",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_c4825190",
@@ -417,22 +594,13 @@
       "source": "VentureBeat",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-05T22:09:32+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>Just two months ago, researchers at the <a href=\"https://github.com/HKUDS\">Data Intelligence Lab at the University of Hong Kong</a> introduced <a href=\"https://github.com/HKUDS/CLI-Anything\">CLI-Anything</a>, a new state-of-the-art tool that analyzes any repo’s source code and generates a structu"
-    },
-    {
-      "id": "rss_cba75cde",
-      "title": "Kanwas",
-      "url": "https://www.producthunt.com/products/kanwas",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "published_at": "2026-05-05T22:00:12+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            An open-source brain for your team\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/kanwas?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a hr"
+      "summary": "<p>Just two months ago, researchers at the <a href=\"https://github.com/HKUDS\">Data Intelligence Lab at the University of Hong Kong</a> introduced <a href=\"https://github.com/HKUDS/CLI-Anything\">CLI-Anything</a>, a new state-of-the-art tool that analyzes any repo’s source code and generates a structu",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48028917",
@@ -441,10 +609,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-05T21:35:14Z",
       "score": 2,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48028756",
@@ -453,34 +624,28 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-05T21:21:33Z",
       "score": 2,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
-      "id": "hn_48027394",
-      "title": "Open LLM Observability – vendor-neutral gen_AI.* semantic convention and SDK",
-      "url": "https://github.com/sauravGit/open-llm-observability",
-      "source": "Hacker News",
-      "source_type": "hn",
-      "category": "ai",
-      "published_at": "2026-05-05T19:34:15Z",
-      "score": 2,
-      "comments": 0,
-      "summary": ""
-    },
-    {
-      "id": "rss_ff84725a",
-      "title": "GetDynasty",
-      "url": "https://www.producthunt.com/products/getdynasty",
+      "id": "rss_d1cb72ad",
+      "title": "EnzoPi",
+      "url": "https://www.producthunt.com/products/enzopi",
       "source": "Product Hunt",
       "source_type": "producthunt",
       "category": "ai",
-      "published_at": "2026-05-05T17:47:20+00:00",
+      "content_type": "產品發布",
+      "published_at": "2026-05-05T18:18:53+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>\n            Exit tax-free using Trusts. For startup founders.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/getdynasty?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>"
+      "summary": "<p>\n            Programmable materials platform for advanced manufacturing\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/enzopi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48025697",
@@ -489,22 +654,88 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-05T17:29:08Z",
       "score": 6,
       "comments": 3,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
-      "id": "rss_79370933",
-      "title": "Magic Studio by Once UI",
-      "url": "https://www.producthunt.com/products/magic-studio-by-once-ui",
+      "id": "rss_4b466618",
+      "title": "Claude Agents for Financial Services",
+      "url": "https://www.producthunt.com/products/claude-code",
       "source": "Product Hunt",
       "source_type": "producthunt",
       "category": "ai",
-      "published_at": "2026-05-05T17:27:45+00:00",
+      "content_type": "產品發布",
+      "published_at": "2026-05-05T17:19:05+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>\n            Turn Once UI into a $10k agency\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/magic-studio-by-once-ui?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |"
+      "summary": "<p>\n            Finance agent templates for pitches, KYC, and closing books\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/claude-code?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_6ba7d52c",
+      "title": "GPT‑5.5 Instant",
+      "url": "https://www.producthunt.com/products/openai",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-05T17:05:04+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Smarter, more personal answers as ChatGPT's new default\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/openai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_db0e7646",
+      "title": "Google Pomelli Catalog",
+      "url": "https://www.producthunt.com/products/google",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-05T16:47:13+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Turn a product catalog into branded campaign assets\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/google?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_145e005e",
+      "title": "Luma Uni 1.1 API",
+      "url": "https://www.producthunt.com/products/luma-ai",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-05T16:43:14+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            A reasoning model that interprets intent before it generates\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/luma-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_c79e5a56",
+      "title": "Arkiv",
+      "url": "https://www.producthunt.com/products/arkiv",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-05T15:29:28+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Asset Protection for Designers\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/arkiv?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"h",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "rss_097b606a",
@@ -513,10 +744,13 @@
       "source": "VentureBeat",
       "source_type": "rss",
       "category": "ai",
+      "content_type": "產業新聞",
       "published_at": "2026-05-05T14:00:00+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>As AI model providers increasingly move downstream, launching products and agents for specific enterprise applications and sectors like finance, one big question still remains: how will said AI agents be equipped with the proper <i>context</i> surrounding a task — who assigned it, which other sta"
+      "summary": "<p>As AI model providers increasingly move downstream, launching products and agents for specific enterprise applications and sectors like finance, one big question still remains: how will said AI agents be equipped with the proper <i>context</i> surrounding a task — who assigned it, which other sta",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48021688",
@@ -525,10 +759,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-05T12:40:43Z",
       "score": 1,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48017838",
@@ -537,34 +774,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-05T03:48:17Z",
       "score": 4,
       "comments": 1,
-      "summary": ""
-    },
-    {
-      "id": "rss_e7a65390",
-      "title": "damnlines.com",
-      "url": "https://www.producthunt.com/products/damnlines-com",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "published_at": "2026-05-05T02:13:30+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            No one likes waiting in a damn line. \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/damnlines-com?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |"
-    },
-    {
-      "id": "rss_07e0f276",
-      "title": "moar",
-      "url": "https://www.producthunt.com/products/moar-2",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "published_at": "2026-05-05T00:45:48+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Your documents. AI ready. \n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/moar-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"http"
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48013758",
@@ -573,10 +789,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T19:28:20Z",
       "score": 21,
       "comments": 16,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48012208",
@@ -585,10 +804,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T17:49:05Z",
       "score": 1,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48010915",
@@ -597,10 +819,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "pm",
+      "content_type": "作品展示",
       "published_at": "2026-05-04T16:29:14Z",
       "score": 2,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48010774",
@@ -609,10 +834,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T16:21:38Z",
       "score": 118,
       "comments": 113,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48010017",
@@ -621,10 +849,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T15:34:23Z",
       "score": 3,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48009242",
@@ -633,22 +864,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T14:28:23Z",
       "score": 6,
       "comments": 0,
-      "summary": ""
-    },
-    {
-      "id": "rss_148f73eb",
-      "title": "Alumni Founder",
-      "url": "https://www.producthunt.com/products/alumni-founder",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "published_at": "2026-05-04T13:03:43+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            The tool that maps founder networks for any company\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/alumni-founder?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>"
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48008086",
@@ -657,10 +879,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "作品展示",
       "published_at": "2026-05-04T12:53:49Z",
       "score": 3,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48006929",
@@ -669,10 +894,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T10:41:14Z",
       "score": 11,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     },
     {
       "id": "hn_48006758",
@@ -681,10 +909,13 @@
       "source": "Hacker News",
       "source_type": "hn",
       "category": "ai",
+      "content_type": "技術新聞",
       "published_at": "2026-05-04T10:20:25Z",
       "score": 2,
       "comments": 0,
-      "summary": ""
+      "summary": "",
+      "title_zh": "",
+      "summary_zh": ""
     }
   ]
 }
