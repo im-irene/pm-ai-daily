@@ -92,18 +92,27 @@ function card(item) {
   return `<article class="news-card">
     <div class="card-meta">
       ${badge(item)}
-      ${item.content_type ? `<span class="badge badge-type">${esc(item.content_type)}</span>` : ''}
       <span class="src-type">${srcTypeLabel(item.source_type)}</span>
       <span class="src-name">${esc(item.source)}</span>
       <span class="card-time">${relTime(item.published_at)}</span>
     </div>
+    ${item.content_type ? `<div class="card-type"><span class="badge badge-type">${esc(item.content_type)}</span></div>` : ''}
     <div class="card-title">
       <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(mainTitle)}</a>
     </div>
     ${subTitle ? `<div class="card-title-en">${esc(subTitle)}</div>` : ''}
-    ${summaryText ? `<div class="card-summary">${esc(summaryText)}</div>` : ''}
     ${stats.length ? `<div class="card-stats">${stats.join('')}</div>` : ''}
+    ${summaryText ? `
+    <div class="summary-panel hidden">${esc(summaryText)}</div>
+    <button class="summary-toggle" onclick="toggleSummary(this)">查看摘要</button>
+    ` : ''}
   </article>`;
+}
+
+function toggleSummary(btn) {
+  const panel = btn.previousElementSibling;
+  const collapsed = panel.classList.toggle('hidden');
+  btn.textContent = collapsed ? '查看摘要' : '收起摘要';
 }
 
 function badge(item) {
