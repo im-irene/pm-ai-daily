@@ -39,6 +39,22 @@
         <button class="tab" data-type="作品展示">作品展示 <span class="count">0</span></button>
       </div>
     </div>
+    <!-- 時間 -->
+    <div class="filter-group">
+      <span class="filter-label">時間</span>
+      <div class="filter-tabs" id="date-tabs">
+        <button class="tab active" data-date="all">全部 <span class="count">0</span></button>
+        <button class="tab" data-date="today">今日 <span class="count">0</span></button>
+        <button class="tab" data-date="yesterday">昨日 <span class="count">0</span></button>
+        <button class="tab" data-date="earlier">更早 <span class="count">0</span></button>
+      </div>
+      <div class="date-range-wrap">
+        <input type="date" id="date-from" class="date-input" title="起始日期">
+        <span class="date-sep">–</span>
+        <input type="date" id="date-to" class="date-input" title="結束日期">
+        <button class="date-clear" id="date-clear" title="清除">&#x2715;</button>
+      </div>
+    </div>
   </nav>
 
   <div class="layout">

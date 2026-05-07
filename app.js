@@ -3,6 +3,9 @@
 let allItems = [];
 let currentCategory = 'all';
 let currentType     = 'all';
+let currentDate     = 'all';
+let customFrom      = null;   // Date | null
+let customTo        = null;   // Date | null
 
 // ── Data ──────────────────────────────────────────────────────────────────
 
@@ -33,28 +36,71 @@ async function loadData() {
 
 // ── Filter ────────────────────────────────────────────────────────────────
 
+function dayBounds() {
+  const now   = new Date();
+  const today = new Date(now); today.setHours(0, 0, 0, 0);
+  const yest  = new Date(today.getTime() - 864e5);
+  return { today, yest };
+}
+
+function applyDateFilter(items, range) {
+  if (customFrom || customTo) {
+    return items.filter(i => {
+      const d = new Date(i.published_at);
+      if (customFrom && d < customFrom) return false;
+      if (customTo) {
+        const toEnd = new Date(customTo); toEnd.setHours(23, 59, 59, 999);
+        if (d > toEnd) return false;
+      }
+      return true;
+    });
+  }
+  if (range === 'all') return items;
+  const { today, yest } = dayBounds();
+  return items.filter(i => {
+    const d = new Date(i.published_at);
+    if (range === 'today')     return d >= today;
+    if (range === 'yesterday') return d >= yest && d < today;
+    if (range === 'earlier')   return d < yest;
+    return true;
+  });
+}
+
 function filterItems() {
   let items = allItems;
   if (currentCategory !== 'all') items = items.filter(i => i.category === currentCategory);
   if (currentType !== 'all')     items = items.filter(i => i.content_type === currentType);
-  return items;
+  return applyDateFilter(items, currentDate);
 }
 
 function updateCounts() {
-  // Category tabs: counts filtered by current type selection
+  // Category tabs: filtered by type + date (not cat)
   document.querySelectorAll('#cat-tabs .tab').forEach(btn => {
-    const cat  = btn.dataset.cat;
-    const base = currentType === 'all' ? allItems : allItems.filter(i => i.content_type === currentType);
+    const cat = btn.dataset.cat;
+    let base = allItems;
+    if (currentType !== 'all') base = base.filter(i => i.content_type === currentType);
+    base = applyDateFilter(base, currentDate);
     btn.querySelector('.count').textContent =
       cat === 'all' ? base.length : base.filter(i => i.category === cat).length;
   });
 
-  // Type tabs: counts filtered by current category selection
+  // Type tabs: filtered by category + date (not type)
   document.querySelectorAll('#type-tabs .tab').forEach(btn => {
     const type = btn.dataset.type;
-    const base = currentCategory === 'all' ? allItems : allItems.filter(i => i.category === currentCategory);
+    let base = allItems;
+    if (currentCategory !== 'all') base = base.filter(i => i.category === currentCategory);
+    base = applyDateFilter(base, currentDate);
     btn.querySelector('.count').textContent =
       type === 'all' ? base.length : base.filter(i => i.content_type === type).length;
+  });
+
+  // Date tabs: filtered by category + type (not date, not custom range)
+  document.querySelectorAll('#date-tabs .tab').forEach(btn => {
+    const range = btn.dataset.date;
+    let base = allItems;
+    if (currentCategory !== 'all') base = base.filter(i => i.category === currentCategory);
+    if (currentType !== 'all')     base = base.filter(i => i.content_type === currentType);
+    btn.querySelector('.count').textContent = applyDateFilter(base, range).length;
   });
 }
 
@@ -233,6 +279,60 @@ document.querySelectorAll('#type-tabs .tab').forEach(btn => {
     closePanel();
     render();
   });
+});
+
+document.querySelectorAll('#date-tabs .tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#date-tabs .tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentDate = btn.dataset.date;
+    // clear custom range when using quick tabs
+    customFrom = null;
+    customTo   = null;
+    document.getElementById('date-from').value = '';
+    document.getElementById('date-to').value   = '';
+    document.getElementById('date-from').classList.remove('active');
+    document.getElementById('date-to').classList.remove('active');
+    document.getElementById('date-clear').classList.remove('visible');
+    updateCounts();
+    closePanel();
+    render();
+  });
+});
+
+function applyCustomRange() {
+  const fromVal = document.getElementById('date-from').value;
+  const toVal   = document.getElementById('date-to').value;
+  customFrom = fromVal ? new Date(fromVal) : null;
+  customTo   = toVal   ? new Date(toVal)   : null;
+  const hasCustom = customFrom || customTo;
+
+  document.getElementById('date-from').classList.toggle('active', !!customFrom);
+  document.getElementById('date-to').classList.toggle('active', !!customTo);
+  document.getElementById('date-clear').classList.toggle('visible', hasCustom);
+
+  // deactivate quick tabs when custom range is set
+  if (hasCustom) {
+    document.querySelectorAll('#date-tabs .tab').forEach(b => b.classList.remove('active'));
+  } else {
+    // restore "全部" as active if both cleared
+    const allTab = document.querySelector('#date-tabs .tab[data-date="all"]');
+    if (allTab) allTab.classList.add('active');
+    currentDate = 'all';
+  }
+
+  updateCounts();
+  closePanel();
+  render();
+}
+
+document.getElementById('date-from').addEventListener('change', applyCustomRange);
+document.getElementById('date-to').addEventListener('change', applyCustomRange);
+
+document.getElementById('date-clear').addEventListener('click', () => {
+  document.getElementById('date-from').value = '';
+  document.getElementById('date-to').value   = '';
+  applyCustomRange();
 });
 
 // ── Init ──────────────────────────────────────────────────────────────────
