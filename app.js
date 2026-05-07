@@ -85,14 +85,16 @@ function card(item) {
   if (item.score > 0)    stats.push(`<span>&#9650; ${fmt(item.score)}</span>`);
   if (item.comments > 0) stats.push(`<span># ${fmt(item.comments)}</span>`);
 
-  return `<article class="news-card" data-id="${esc(item.id)}" onclick="openPanel('${item.id.replace(/'/g, "\\'")}')">
-    <div class="card-meta">
+  return `<article class="news-card cat-${item.category || 'other'}" data-id="${esc(item.id)}" onclick="openPanel('${item.id.replace(/'/g, "\\'")}')">
+    <div class="card-cat-row">
       ${badge(item)}
+    </div>
+    ${item.content_type ? `<div class="card-type-row"><span class="badge badge-type">${esc(item.content_type)}</span></div>` : ''}
+    <div class="card-meta">
       <span class="src-type">${srcTypeLabel(item.source_type)}</span>
       <span class="src-name">${esc(item.source)}</span>
       <span class="card-time">${relTime(item.published_at)}</span>
     </div>
-    ${item.content_type ? `<div class="card-type"><span class="badge badge-type">${esc(item.content_type)}</span></div>` : ''}
     <div class="card-title">${esc(mainTitle)}</div>
     ${stats.length ? `<div class="card-stats">${stats.join('')}</div>` : ''}
   </article>`;
