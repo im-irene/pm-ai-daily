@@ -16,13 +16,25 @@
   </header>
 
   <nav class="filter-nav">
-    <div class="container">
-      <div class="filter-tabs">
-        <button class="tab active" data-filter="all">全部 <span class="count" id="count-all">0</span></button>
-        <button class="tab" data-filter="pm">PM <span class="count" id="count-pm">0</span></button>
-        <button class="tab" data-filter="ai">AI <span class="count" id="count-ai">0</span></button>
-        <button class="tab" data-filter="community">社群討論 <span class="count" id="count-community">0</span></button>
-        <button class="tab" data-filter="producthunt">Product Hunt <span class="count" id="count-producthunt">0</span></button>
+    <!-- 分類 -->
+    <div class="filter-group">
+      <span class="filter-label">分類</span>
+      <div class="filter-tabs" id="cat-tabs">
+        <button class="tab active" data-cat="all">全部 <span class="count">0</span></button>
+        <button class="tab" data-cat="pm">PM <span class="count">0</span></button>
+        <button class="tab" data-cat="ai">AI <span class="count">0</span></button>
+      </div>
+    </div>
+    <!-- 類型 -->
+    <div class="filter-group">
+      <span class="filter-label">類型</span>
+      <div class="filter-tabs" id="type-tabs">
+        <button class="tab active" data-type="all">全部 <span class="count">0</span></button>
+        <button class="tab" data-type="產業新聞">產業新聞 <span class="count">0</span></button>
+        <button class="tab" data-type="社群討論">社群討論 <span class="count">0</span></button>
+        <button class="tab" data-type="技術新聞">技術新聞 <span class="count">0</span></button>
+        <button class="tab" data-type="產品發布">產品發布 <span class="count">0</span></button>
+        <button class="tab" data-type="作品展示">作品展示 <span class="count">0</span></button>
       </div>
     </div>
   </nav>

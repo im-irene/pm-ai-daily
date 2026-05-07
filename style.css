@@ -57,15 +57,34 @@ header {
 .filter-nav {
   background: rgba(255,255,255,0.02);
   border-bottom: 1px solid var(--border);
-  padding: 8px 16px;
+  flex-shrink: 0;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  flex-shrink: 0;
+  border-bottom: 1px solid var(--border);
 }
-.filter-nav::-webkit-scrollbar { display: none; }
+.filter-group:last-child { border-bottom: none; }
+.filter-group::-webkit-scrollbar { display: none; }
 
-.filter-tabs { display: flex; gap: 4px; min-width: max-content; }
+.filter-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--muted);
+  min-width: 26px;
+  flex-shrink: 0;
+  opacity: .6;
+}
+
+.filter-tabs { display: flex; gap: 3px; min-width: max-content; }
 
 .tab {
   background: none;
@@ -75,7 +94,7 @@ header {
   cursor: pointer;
   font-family: var(--font);
   font-size: 12px;
-  padding: 5px 14px;
+  padding: 4px 12px;
   display: flex;
   align-items: center;
   gap: 5px;

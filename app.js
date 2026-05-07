@@ -1,7 +1,8 @@
 'use strict';
 
 let allItems = [];
-let currentFilter = 'all';
+let currentCategory = 'all';
+let currentType     = 'all';
 
 // ── Data ──────────────────────────────────────────────────────────────────
 
@@ -32,27 +33,35 @@ async function loadData() {
 
 // ── Filter ────────────────────────────────────────────────────────────────
 
-function filterItems(filter) {
-  if (filter === 'all')         return allItems;
-  if (filter === 'pm')          return allItems.filter(i => i.category === 'pm');
-  if (filter === 'ai')          return allItems.filter(i => i.category === 'ai');
-  if (filter === 'community')   return allItems.filter(i => i.source_type === 'reddit');
-  if (filter === 'producthunt') return allItems.filter(i => i.source_type === 'producthunt');
-  return allItems;
+function filterItems() {
+  let items = allItems;
+  if (currentCategory !== 'all') items = items.filter(i => i.category === currentCategory);
+  if (currentType !== 'all')     items = items.filter(i => i.content_type === currentType);
+  return items;
 }
 
 function updateCounts() {
-  document.getElementById('count-all').textContent = allItems.length;
-  document.getElementById('count-pm').textContent = allItems.filter(i => i.category === 'pm').length;
-  document.getElementById('count-ai').textContent = allItems.filter(i => i.category === 'ai').length;
-  document.getElementById('count-community').textContent = allItems.filter(i => i.source_type === 'reddit').length;
-  document.getElementById('count-producthunt').textContent = allItems.filter(i => i.source_type === 'producthunt').length;
+  // Category tabs: counts filtered by current type selection
+  document.querySelectorAll('#cat-tabs .tab').forEach(btn => {
+    const cat  = btn.dataset.cat;
+    const base = currentType === 'all' ? allItems : allItems.filter(i => i.content_type === currentType);
+    btn.querySelector('.count').textContent =
+      cat === 'all' ? base.length : base.filter(i => i.category === cat).length;
+  });
+
+  // Type tabs: counts filtered by current category selection
+  document.querySelectorAll('#type-tabs .tab').forEach(btn => {
+    const type = btn.dataset.type;
+    const base = currentCategory === 'all' ? allItems : allItems.filter(i => i.category === currentCategory);
+    btn.querySelector('.count').textContent =
+      type === 'all' ? base.length : base.filter(i => i.content_type === type).length;
+  });
 }
 
 // ── Rendering: Left panel ─────────────────────────────────────────────────
 
 function render() {
-  const items = filterItems(currentFilter);
+  const items = filterItems();
   const list  = document.getElementById('news-list');
   const empty = document.getElementById('empty-state');
 
@@ -106,12 +115,10 @@ function openPanel(id) {
   const item = allItems.find(i => i.id === id);
   if (!item) return;
 
-  // Highlight selected card
   document.querySelectorAll('.news-card').forEach(c => c.classList.remove('selected'));
   const el = document.querySelector(`.news-card[data-id="${CSS.escape(id)}"]`);
   if (el) el.classList.add('selected');
 
-  // Render detail
   const placeholder = document.getElementById('detail-placeholder');
   const content     = document.getElementById('detail-content');
   placeholder.classList.add('hidden');
@@ -119,7 +126,6 @@ function openPanel(id) {
   content.innerHTML = renderDetail(item);
   content.scrollTop = 0;
 
-  // Mobile: slide in
   document.getElementById('detail-panel').classList.add('open');
 }
 
@@ -169,11 +175,7 @@ function renderDetail(item) {
 // ── Helpers ───────────────────────────────────────────────────────────────
 
 function badge(item) {
-  const map = {
-    pm:      ['PM',      'badge-pm'],
-    ai:      ['AI',      'badge-ai'],
-    product: ['Product', 'badge-product'],
-  };
+  const map = { pm: ['PM', 'badge-pm'], ai: ['AI', 'badge-ai'], product: ['Product', 'badge-product'] };
   const [label, cls] = map[item.category] || ['其他', 'badge-pm'];
   return `<span class="badge ${cls}">${label}</span>`;
 }
@@ -201,9 +203,7 @@ function relTime(iso) {
   return new Date(iso).toLocaleDateString('zh-TW', { month: 'short', day: 'numeric' });
 }
 
-function fmt(n) {
-  return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
-}
+function fmt(n)  { return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n); }
 
 function esc(str) {
   const d = document.createElement('div');
@@ -213,11 +213,23 @@ function esc(str) {
 
 // ── Tab handlers ──────────────────────────────────────────────────────────
 
-document.querySelectorAll('.tab').forEach(btn => {
+document.querySelectorAll('#cat-tabs .tab').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('#cat-tabs .tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    currentFilter = btn.dataset.filter;
+    currentCategory = btn.dataset.cat;
+    updateCounts();
+    closePanel();
+    render();
+  });
+});
+
+document.querySelectorAll('#type-tabs .tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#type-tabs .tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentType = btn.dataset.type;
+    updateCounts();
     closePanel();
     render();
   });
