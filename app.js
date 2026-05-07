@@ -49,7 +49,7 @@ function updateCounts() {
   document.getElementById('count-producthunt').textContent = allItems.filter(i => i.source_type === 'producthunt').length;
 }
 
-// ── Rendering ─────────────────────────────────────────────────────────────
+// ── Rendering: Left panel ─────────────────────────────────────────────────
 
 function render() {
   const items = filterItems(currentFilter);
@@ -63,7 +63,6 @@ function render() {
   }
   empty.classList.add('hidden');
 
-  // Group by date label
   const groups = new Map();
   for (const item of items) {
     const key = dateGroup(item.published_at);
@@ -81,15 +80,12 @@ function render() {
 }
 
 function card(item) {
+  const mainTitle = item.title_zh || item.title;
   const stats = [];
   if (item.score > 0)    stats.push(`<span>&#9650; ${fmt(item.score)}</span>`);
   if (item.comments > 0) stats.push(`<span># ${fmt(item.comments)}</span>`);
 
-  const mainTitle   = item.title_zh  || item.title;
-  const subTitle    = item.title_zh  ? item.title : '';
-  const summaryText = item.summary_zh || item.summary || '';
-
-  return `<article class="news-card">
+  return `<article class="news-card" data-id="${esc(item.id)}" onclick="openPanel('${item.id.replace(/'/g, "\\'")}')">
     <div class="card-meta">
       ${badge(item)}
       <span class="src-type">${srcTypeLabel(item.source_type)}</span>
@@ -97,23 +93,78 @@ function card(item) {
       <span class="card-time">${relTime(item.published_at)}</span>
     </div>
     ${item.content_type ? `<div class="card-type"><span class="badge badge-type">${esc(item.content_type)}</span></div>` : ''}
-    <div class="card-title">
-      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(mainTitle)}</a>
-    </div>
-    ${subTitle ? `<div class="card-title-en">${esc(subTitle)}</div>` : ''}
+    <div class="card-title">${esc(mainTitle)}</div>
     ${stats.length ? `<div class="card-stats">${stats.join('')}</div>` : ''}
-    ${summaryText ? `
-    <div class="summary-panel hidden">${esc(summaryText)}</div>
-    <button class="summary-toggle" onclick="toggleSummary(this)">查看總結</button>
-    ` : ''}
   </article>`;
 }
 
-function toggleSummary(btn) {
-  const panel = btn.previousElementSibling;
-  const collapsed = panel.classList.toggle('hidden');
-  btn.textContent = collapsed ? '查看總結' : '收起總結';
+// ── Detail Panel ──────────────────────────────────────────────────────────
+
+function openPanel(id) {
+  const item = allItems.find(i => i.id === id);
+  if (!item) return;
+
+  // Highlight selected card
+  document.querySelectorAll('.news-card').forEach(c => c.classList.remove('selected'));
+  const el = document.querySelector(`.news-card[data-id="${CSS.escape(id)}"]`);
+  if (el) el.classList.add('selected');
+
+  // Render detail
+  const placeholder = document.getElementById('detail-placeholder');
+  const content     = document.getElementById('detail-content');
+  placeholder.classList.add('hidden');
+  content.classList.remove('hidden');
+  content.innerHTML = renderDetail(item);
+  content.scrollTop = 0;
+
+  // Mobile: slide in
+  document.getElementById('detail-panel').classList.add('open');
 }
+
+function closePanel() {
+  document.getElementById('detail-panel').classList.remove('open');
+  document.querySelectorAll('.news-card').forEach(c => c.classList.remove('selected'));
+  document.getElementById('detail-placeholder').classList.remove('hidden');
+  document.getElementById('detail-content').classList.add('hidden');
+}
+
+function renderDetail(item) {
+  const mainTitle   = item.title_zh || item.title;
+  const subTitle    = item.title_zh && item.title_zh !== item.title ? item.title : '';
+  const summaryText = item.summary_zh || item.summary || '';
+
+  const stats = [];
+  if (item.score > 0)    stats.push(`&#9650; ${fmt(item.score)}`);
+  if (item.comments > 0) stats.push(`# ${fmt(item.comments)}`);
+
+  return `
+    <div class="detail-header">
+      <button class="back-btn" onclick="closePanel()">&#8592; 返回</button>
+      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer" class="btn-open">開啟原文 &#8599;</a>
+    </div>
+    <div class="detail-badges">
+      ${badge(item)}
+      ${item.content_type ? `<span class="badge badge-type">${esc(item.content_type)}</span>` : ''}
+    </div>
+    <div class="detail-meta">
+      <span class="src-type">${srcTypeLabel(item.source_type)}</span>
+      <span>${esc(item.source)}</span>
+      <span>·</span>
+      <span>${relTime(item.published_at)}</span>
+      ${stats.length ? `<span>·</span><span>${stats.join('&nbsp;&nbsp;')}</span>` : ''}
+    </div>
+    <h2 class="detail-title">${esc(mainTitle)}</h2>
+    ${subTitle ? `<div class="detail-title-en">${esc(subTitle)}</div>` : ''}
+    <div class="detail-divider"></div>
+    <div class="detail-summary-label">Claude 閱讀總結</div>
+    ${summaryText
+      ? `<div class="detail-summary">${esc(summaryText)}</div>`
+      : `<div class="detail-summary-empty">總結將於下次更新後生成</div>`
+    }
+  `;
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────
 
 function badge(item) {
   const map = {
@@ -121,7 +172,7 @@ function badge(item) {
     ai:      ['AI',      'badge-ai'],
     product: ['Product', 'badge-product'],
   };
-  const [label, cls] = map[item.category] || ['Other', 'badge-pm'];
+  const [label, cls] = map[item.category] || ['其他', 'badge-pm'];
   return `<span class="badge ${cls}">${label}</span>`;
 }
 
@@ -129,14 +180,11 @@ function srcTypeLabel(t) {
   return { reddit: 'Reddit', hn: 'HN', producthunt: 'PH', rss: 'RSS' }[t] || t.toUpperCase();
 }
 
-// ── Utils ─────────────────────────────────────────────────────────────────
-
 function dateGroup(iso) {
-  const d = new Date(iso);
+  const d     = new Date(iso);
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const yest  = new Date(today.getTime() - 864e5);
-  const day   = new Date(d);  day.setHours(0, 0, 0, 0);
-
+  const day   = new Date(d); day.setHours(0, 0, 0, 0);
   if (day.getTime() === today.getTime()) return '今日';
   if (day.getTime() === yest.getTime())  return '昨日';
   return d.toLocaleDateString('zh-TW', { month: 'long', day: 'numeric' });
@@ -168,6 +216,7 @@ document.querySelectorAll('.tab').forEach(btn => {
     document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentFilter = btn.dataset.filter;
+    closePanel();
     render();
   });
 });
