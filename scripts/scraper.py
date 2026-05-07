@@ -23,6 +23,14 @@ AI_KEYWORDS = {
     "stable diffusion", "midjourney", "transformer", "fine-tun",
 }
 
+AI_KEYWORDS_ZH = {
+    "人工智慧", "人工智能", "機器學習", "机器学习", "深度學習", "深度学习",
+    "大語言模型", "大语言模型", "語言模型", "语言模型", "生成式",
+    "神經網路", "神经网络", "自然語言", "自然语言", "chatgpt", "gpt",
+    "claude", "gemini", "llm", "向量", "嵌入", "微調", "微调",
+    "模型訓練", "模型训练", "算法", "演算法", "自動化ai", "智慧助理",
+}
+
 PM_KEYWORDS = {
     "product manager", "product management", "product roadmap", "agile",
     "scrum", "sprint", "user story", "backlog", "stakeholder",
@@ -31,6 +39,14 @@ PM_KEYWORDS = {
     "product discovery", "customer discovery", "product-led",
     "design thinking", "customer journey", "value proposition",
     "product analytics", "feature request", "product owner",
+}
+
+PM_KEYWORDS_ZH = {
+    "產品經理", "产品经理", "產品管理", "产品管理", "需求分析",
+    "用戶研究", "用户研究", "使用者研究", "敏捷開發", "敏捷", "迭代",
+    "產品路線圖", "产品路线图", "產品策略", "产品策略",
+    "用戶體驗", "用户体验", "使用者體驗", "ux", "用戶故事",
+    "產品思維", "产品思维", "需求文件", "prd", "mvp", "go-to-market",
 }
 
 REDDIT_SOURCES = [
@@ -49,6 +65,11 @@ HN_QUERIES = [
 ]
 
 RSS_SOURCES = [
+    # 中文來源（優先）
+    ("https://www.woshipm.com/feed", "人人都是產品經理", "rss", "pm"),
+    ("https://www.jiqizhixin.com/rss", "機器之心", "rss", "ai"),
+    ("https://www.ithome.com.tw/rss", "iThome", "rss", None),
+    # 英文來源
     ("https://www.producthunt.com/feed", "Product Hunt", "producthunt", "product"),
     ("https://techcrunch.com/feed/", "TechCrunch", "rss", None),
     ("https://venturebeat.com/feed/", "VentureBeat", "rss", None),
@@ -71,10 +92,17 @@ def cutoff_dt():
 def short_hash(s):
     return hashlib.md5(s.encode()).hexdigest()[:8]
 
+def is_chinese(text):
+    zh_chars = len(re.findall(r'[一-鿿㐀-䶿]', text))
+    return zh_chars / max(len(text), 1) > 0.2
+
 def categorize(title, desc=""):
     text = (title + " " + desc).lower()
     pm_score = sum(1 for k in PM_KEYWORDS if k in text)
     ai_score = sum(1 for k in AI_KEYWORDS if k in text)
+    # Also check Chinese keywords
+    pm_score += sum(1 for k in PM_KEYWORDS_ZH if k in text)
+    ai_score += sum(1 for k in AI_KEYWORDS_ZH if k in text)
     if pm_score == 0 and ai_score == 0:
         return None
     return "pm" if pm_score >= ai_score else "ai"
@@ -227,10 +255,12 @@ def translate_batch(batch, client):
 
     prompt = (
         "你是台灣科技媒體編輯，請針對以下每篇文章完成兩件事：\n\n"
-        "1. title_zh：自然流暢的繁體中文標題（符合台灣媒體風格，勿逐字翻譯）\n"
+        "1. title_zh：\n"
+        "   - 若標題為英文 → 翻譯成自然流暢的繁體中文（符合台灣媒體風格）\n"
+        "   - 若標題為中文 → 直接使用原標題，若為簡體則轉為繁體\n"
         "2. summary_zh：以讀完整篇文章的角度，用繁體中文撰寫 3-4 句的閱讀總結。\n"
         "   內容需涵蓋：文章核心論點、關鍵數據或事件、以及對 PM 或 AI 從業者的實際意義。\n"
-        "   請用自己的理解與判斷撰寫，而非翻譯原文描述。\n\n"
+        "   請用自己的理解與判斷撰寫，而非翻譯或複製原文描述。\n\n"
         "直接回傳 JSON array，不加任何說明文字：\n"
         '[{"title_zh": "...", "summary_zh": "..."}, ...]\n\n'
         "文章列表：\n" + "\n".join(lines)
