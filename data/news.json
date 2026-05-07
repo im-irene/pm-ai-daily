@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-07T07:05:37.149575+00:00",
+  "updated_at": "2026-05-07T07:25:07.673425+00:00",
   "total": 61,
   "items": [
     {
@@ -194,6 +194,21 @@
       "score": 0,
       "comments": 0,
       "summary": "<p>\n            A complete React toolkit made for AI\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/forge-20?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "rss_eb7ccfc9",
+      "title": "ClearMesh",
+      "url": "https://www.producthunt.com/products/clearmesh",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-06T20:06:33+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            A Git-like platform for datasets, models, and binary folders\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/clearmesh?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -633,21 +648,6 @@
       "summary_zh": ""
     },
     {
-      "id": "rss_d1cb72ad",
-      "title": "EnzoPi",
-      "url": "https://www.producthunt.com/products/enzopi",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-05T18:18:53+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Programmable materials platform for advanced manufacturing\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/enzopi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "hn_48025697",
       "title": "Congress Is Doing Little to Prepare for Potential A.I. Job Losses",
       "url": "https://www.nytimes.com/2026/05/05/business/artificial-intelligence-safety-net.html",
@@ -733,7 +733,7 @@
       "published_at": "2026-05-05T15:29:28+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>\n            Asset Protection for Designers\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/arkiv?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"h",
+      "summary": "<p>\n            Modern Asset Protection for Designers\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/arkiv?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a",
       "title_zh": "",
       "summary_zh": ""
     },
