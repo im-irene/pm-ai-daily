@@ -186,6 +186,7 @@ function renderDetail(item) {
   const mainTitle   = item.title_zh || item.title;
   const subTitle    = item.title_zh && item.title_zh !== item.title ? item.title : '';
   const summaryText = item.summary_zh || item.summary || '';
+  const bodyText    = item.body_text || '';
 
   const stats = [];
   if (item.score > 0)    stats.push(`&#9650; ${fmt(item.score)}`);
@@ -194,7 +195,7 @@ function renderDetail(item) {
   return `
     <div class="detail-header">
       <button class="back-btn" onclick="closePanel()">&#8592; 返回</button>
-      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer" class="btn-open">開啟原文 &#8599;</a>
+      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer" class="btn-open-sm">開啟原文 &#8599;</a>
     </div>
     <div class="detail-badges">
       ${badge(item)}
@@ -215,6 +216,14 @@ function renderDetail(item) {
       ? `<div class="detail-summary">${esc(summaryText)}</div>`
       : `<div class="detail-summary-empty">總結將於下次更新後生成</div>`
     }
+    ${bodyText ? `
+      <div class="detail-divider"></div>
+      <div class="detail-body-label">完整內容</div>
+      <div class="detail-body">${esc(bodyText)}</div>
+    ` : ''}
+    <div class="detail-footer">
+      <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer" class="detail-source-link">在新分頁開啟原始頁面 &#8599;</a>
+    </div>
   `;
 }
 
@@ -227,7 +236,7 @@ function badge(item) {
 }
 
 function srcTypeLabel(t) {
-  return { reddit: 'Reddit', hn: 'HN', producthunt: 'PH', rss: 'RSS' }[t] || t.toUpperCase();
+  return { reddit: 'Reddit', hn: 'HN', producthunt: 'PH', rss: 'RSS', ptt: 'PTT' }[t] || t.toUpperCase();
 }
 
 function dateGroup(iso) {

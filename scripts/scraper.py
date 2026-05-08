@@ -29,6 +29,11 @@ AI_KEYWORDS_ZH = {
     "神經網路", "神经网络", "自然語言", "自然语言", "chatgpt", "gpt",
     "claude", "gemini", "llm", "向量", "嵌入", "微調", "微调",
     "模型訓練", "模型训练", "算法", "演算法", "自動化ai", "智慧助理",
+    # 補充
+    "ai工具", "ai助手", "ai應用", "生成式ai", "大型語言模型",
+    "提示詞", "ai代理", "大模型", "基礎模型", "多模態",
+    "文字生成", "圖像生成", "文生圖", "ai繪圖", "智慧",
+    "openai", "google deepmind", "meta ai",
 }
 
 PM_KEYWORDS = {
@@ -47,6 +52,10 @@ PM_KEYWORDS_ZH = {
     "產品路線圖", "产品路线图", "產品策略", "产品策略",
     "用戶體驗", "用户体验", "使用者體驗", "ux", "用戶故事",
     "產品思維", "产品思维", "需求文件", "prd", "mvp", "go-to-market",
+    # 補充
+    "產品設計", "功能設計", "需求規格", "產品開發", "版本迭代",
+    "產品上線", "產品優化", "數位產品", "功能需求",
+    "saas", "b2b", "b2c", "數位轉型", "系統設計",
 }
 
 REDDIT_SOURCES = [
@@ -65,15 +74,28 @@ HN_QUERIES = [
 ]
 
 RSS_SOURCES = [
-    # 中文來源（優先）
-    ("https://www.woshipm.com/feed", "人人都是產品經理", "rss", "pm"),
-    ("https://www.jiqizhixin.com/rss", "機器之心", "rss", "ai"),
-    ("https://www.ithome.com.tw/rss", "iThome", "rss", None),
-    # 英文來源
-    ("https://www.producthunt.com/feed", "Product Hunt", "producthunt", "product"),
-    ("https://techcrunch.com/feed/", "TechCrunch", "rss", None),
-    ("https://venturebeat.com/feed/", "VentureBeat", "rss", None),
-    ("https://www.theverge.com/rss/index.xml", "The Verge", "rss", None),
+    # (url, 來源名稱, source_type, fallback_category, max_entries)
+    # ── 台灣科技媒體 ──────────────────────────────────────────
+    ("https://technews.tw/feed/",                    "科技新報",     "rss",  None,      30),
+    ("https://www.inside.com.tw/feed",               "INSIDE",       "rss",  None,      25),
+    ("https://www.bnext.com.tw/rss",                 "數位時代",     "rss",  None,      25),
+    ("https://www.ithome.com.tw/rss",                "iThome",       "rss",  None,      25),
+    ("https://buzzorange.com/techorange/feed/",       "TechOrange",   "rss",  None,      20),
+    ("https://meet.bnext.com.tw/feed",               "Meet創業智庫", "rss",  None,      20),
+    ("https://www.thenewslens.com/rss.xml",          "TNL媒體",      "rss",  None,      20),
+    # ── 台灣社群（PTT） ───────────────────────────────────────
+    ("https://www.ptt.cc/bbs/Soft_Job/index.rss",   "PTT Soft_Job", "ptt",  None,      20),
+    ("https://www.ptt.cc/bbs/Tech_Job/index.rss",   "PTT Tech_Job", "ptt",  None,      20),
+    # ── 中文 PM 媒體 ──────────────────────────────────────────
+    ("https://www.woshipm.com/feed",                 "人人都是產品經理", "rss", "pm",   30),
+    # ── 中文 AI 媒體 ──────────────────────────────────────────
+    ("https://www.qbitai.com/feed",                  "量子位",       "rss",  "ai",      30),
+    ("https://www.jiqizhixin.com/rss",               "機器之心",     "rss",  "ai",      30),
+    # ── 英文來源（補充） ──────────────────────────────────────
+    ("https://www.producthunt.com/feed",             "Product Hunt", "producthunt", "product", 10),
+    ("https://techcrunch.com/feed/",                 "TechCrunch",   "rss",  None,      10),
+    ("https://venturebeat.com/feed/",                "VentureBeat",  "rss",  None,      10),
+    ("https://www.theverge.com/rss/index.xml",       "The Verge",    "rss",  None,      10),
 ]
 
 HEADERS = {"User-Agent": "Mozilla/5.0 PM-AI-Daily/1.0 (github.com)"}
@@ -107,11 +129,31 @@ def categorize(title, desc=""):
         return None
     return "pm" if pm_score >= ai_score else "ai"
 
+def extract_rss_body(entry):
+    """Extract full plain-text body from an RSS entry (uses content:encoded if available)."""
+    html = ''
+    if hasattr(entry, 'content') and entry.content:
+        html = entry.content[0].get('value', '')
+    if not html:
+        html = entry.get('summary', '')
+    if not html:
+        return ''
+    text = re.sub(r'<[^>]+>', ' ', html)
+    for entity, char in [('&amp;', '&'), ('&lt;', '<'), ('&gt;', '>'),
+                          ('&quot;', '"'), ('&#x27;', "'"), ('&apos;', "'"), ('&nbsp;', ' ')]:
+        text = text.replace(entity, char)
+    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()[:5000]
+
+
 def detect_content_type(title, source_type):
     """Classify content into readable type labels."""
     if source_type == "producthunt":
         return "產品發布"
     if source_type == "reddit":
+        return "社群討論"
+    if source_type == "ptt":
         return "社群討論"
     if source_type == "hn":
         if title.startswith("Show HN:"):
@@ -147,6 +189,9 @@ def fetch_reddit(subreddit, default_category):
         if created < cutoff_dt():
             continue
         post_id = short_hash(entry.get("link", title))
+        raw_summary = entry.get("summary", "")
+        reddit_body = re.sub(r'<[^>]+>', ' ', raw_summary)
+        reddit_body = re.sub(r'\s+', ' ', reddit_body).strip()[:3000]
         items.append({
             "id": f"reddit_{post_id}",
             "title": title,
@@ -158,7 +203,8 @@ def fetch_reddit(subreddit, default_category):
             "published_at": created.isoformat(),
             "score": 0,
             "comments": 0,
-            "summary": entry.get("summary", "")[:300].strip(),
+            "summary": raw_summary[:300].strip(),
+            "body_text": reddit_body,
             "title_zh": "",
             "summary_zh": "",
         })
@@ -196,21 +242,22 @@ def fetch_hn(query, category):
             "score": h.get("points", 0),
             "comments": h.get("num_comments", 0),
             "summary": "",
+            "body_text": "",
             "title_zh": "",
             "summary_zh": "",
         })
     return items
 
 
-def fetch_rss(feed_url, source_name, source_type, fallback_category):
+def fetch_rss(feed_url, source_name, source_type, fallback_category, max_entries=20):
     try:
-        feed = feedparser.parse(feed_url)
+        feed = feedparser.parse(feed_url, request_headers={"User-Agent": HEADERS["User-Agent"]})
     except Exception as e:
         print(f"  [RSS/{source_name}] Error: {e}", file=sys.stderr)
         return []
 
     items = []
-    for entry in feed.entries[:20]:
+    for entry in feed.entries[:max_entries]:
         title = entry.get("title", "").strip()
         summary = entry.get("summary", "")[:300].strip()
 
@@ -226,7 +273,7 @@ def fetch_rss(feed_url, source_name, source_type, fallback_category):
             cat = fallback_category
 
         items.append({
-            "id": f"rss_{short_hash(entry.get('link', title))}",
+            "id": f"{source_type}_{short_hash(entry.get('link', title))}",
             "title": title,
             "url": entry.get("link", ""),
             "source": source_name,
@@ -237,6 +284,7 @@ def fetch_rss(feed_url, source_name, source_type, fallback_category):
             "score": 0,
             "comments": 0,
             "summary": summary,
+            "body_text": extract_rss_body(entry),
             "title_zh": "",
             "summary_zh": "",
         })
@@ -321,8 +369,8 @@ def main():
         all_items.extend(items)
 
     print("RSS feeds...")
-    for feed_url, source_name, source_type, fallback_category in RSS_SOURCES:
-        items = fetch_rss(feed_url, source_name, source_type, fallback_category)
+    for feed_url, source_name, source_type, fallback_category, max_entries in RSS_SOURCES:
+        items = fetch_rss(feed_url, source_name, source_type, fallback_category, max_entries)
         print(f"  {source_name}: {len(items)}")
         all_items.extend(items)
 

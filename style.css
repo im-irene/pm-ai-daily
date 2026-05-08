@@ -491,6 +491,74 @@ header {
   padding: 16px 0;
 }
 
+/* ── Article Body ────────────────────────────────────────── */
+.detail-body-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  color: var(--text-mid);
+  margin-bottom: 14px;
+  font-family: var(--font);
+}
+.detail-body-label::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--border-mid);
+  border-radius: 50%;
+}
+
+.detail-body {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--text);
+  font-family: var(--font-zh);
+  white-space: pre-line;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Detail Footer ───────────────────────────────────────── */
+.detail-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: right;
+}
+
+.detail-source-link {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  font-family: var(--font);
+  transition: color 120ms var(--ease);
+}
+.detail-source-link:hover { color: var(--forest-700); text-decoration: underline; }
+
+/* ── Open-original small button (header) ─────────────────── */
+.btn-open-sm {
+  background: none;
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-pill);
+  color: var(--text-mid);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 14px;
+  text-decoration: none;
+  font-family: var(--font-zh);
+  transition: background 120ms var(--ease), border-color 120ms var(--ease), color 120ms var(--ease);
+}
+.btn-open-sm:hover { background: var(--bg-block); border-color: var(--forest-600); color: var(--forest-700); }
+.btn-open-sm:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
 /* ── States ──────────────────────────────────────────────── */
 .loading, .empty-state {
   text-align: center;
