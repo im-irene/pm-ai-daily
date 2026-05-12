@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-12T00:29:25.970914+00:00",
-  "total": 159,
+  "updated_at": "2026-05-12T00:30:39.536526+00:00",
+  "total": 158,
   "items": [
     {
       "id": "hn_48102507",
@@ -2191,22 +2191,6 @@
       "comments": 0,
       "summary": "福尔摩斯探案都能演",
       "body_text": "福尔摩斯探案都能演",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_4d932a17",
-      "title": "RPCForge",
-      "url": "https://www.producthunt.com/products/rpcforge-own-your-rpc",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-10T15:55:32+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Multi-chain Ethereum RPC you own and control\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/rpcforge-own-your-rpc?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Multi-chain Ethereum RPC you own and control\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
