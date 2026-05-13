@@ -1,7 +1,23 @@
 {
-  "updated_at": "2026-05-13T00:52:49.608799+00:00",
+  "updated_at": "2026-05-13T00:53:54.026802+00:00",
   "total": 178,
   "items": [
+    {
+      "id": "rss_908ab82e",
+      "title": "AI 伺服器散熱需求續強，美系看好奇鋐獲利率再攻高",
+      "url": "https://finance.technews.tw/2026/05/13/avc-ai-server-cooling-2/",
+      "source": "科技新報",
+      "source_type": "rss",
+      "category": "ai",
+      "content_type": "產業新聞",
+      "published_at": "2026-05-13T00:53:22+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "受惠 AI 伺服器散熱需求持續升溫，散熱廠奇鋐再獲美系大行看好。最新報告指出，奇鋐 2026 年第一季可望繳出 [&#8230;]",
+      "body_text": "受惠 AI 伺服器散熱需求持續升溫，散熱廠奇鋐再獲美系大行看好。最新報告指出，奇鋐 2026 年第一季可望繳出 [&#8230;]",
+      "title_zh": "",
+      "summary_zh": ""
+    },
     {
       "id": "rss_64b64965",
       "title": "Medicare’s new payment model is built for AI, and most of the tech world has no idea",
@@ -2495,22 +2511,6 @@
       "comments": 0,
       "summary": "",
       "body_text": "",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_cca05199",
-      "title": "display.dev",
-      "url": "https://www.producthunt.com/products/display-dev",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-11T12:29:11+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Publish agent-generated HTML behind company auth\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/display-dev?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Publish agent-generated HTML behind company auth\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
