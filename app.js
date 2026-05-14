@@ -125,6 +125,13 @@ function render() {
     groups.get(key).push(item);
   }
 
+  for (const grpItems of groups.values()) {
+    grpItems.sort((a, b) => {
+      const diff = (isChineseSource(a) ? 0 : 1) - (isChineseSource(b) ? 0 : 1);
+      return diff !== 0 ? diff : new Date(b.published_at) - new Date(a.published_at);
+    });
+  }
+
   list.innerHTML = Array.from(groups.entries())
     .map(([label, grpItems]) => `
       <div class="date-group">
@@ -237,6 +244,12 @@ function badge(item) {
 
 function srcTypeLabel(t) {
   return { reddit: 'Reddit', hn: 'HN', producthunt: 'PH', rss: 'RSS', ptt: 'PTT' }[t] || t.toUpperCase();
+}
+
+function isChineseSource(item) {
+  if (item.source_type === 'ptt') return true;
+  if (['reddit', 'hn', 'producthunt'].includes(item.source_type)) return false;
+  return /[一-鿿㐀-䶿]/.test(item.title);
 }
 
 function dateGroup(iso) {
