@@ -293,8 +293,8 @@ def fetch_rss(feed_url, source_name, source_type, fallback_category, max_entries
 
 # ── Translation ───────────────────────────────────────────────────────────
 
-def translate_batch(batch, client):
-    """Send a batch of items to Claude for Chinese title + summary."""
+def translate_batch(batch, model):
+    """Send a batch of items to Gemini for Chinese title + summary."""
     lines = []
     for i, item in enumerate(batch):
         lines.append(f"{i+1}. 標題: {item['title']}")
@@ -316,13 +316,8 @@ def translate_batch(batch, client):
         "文章列表：\n" + "\n".join(lines)
     )
 
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=2048,
-        messages=[{"role": "user", "content": prompt}],
-    )
-
-    text = response.content[0].text
+    response = model.generate_content(prompt)
+    text = response.text
     match = re.search(r"\[[\s\S]*\]", text)
     if not match:
         raise ValueError("No JSON array in response")
@@ -331,12 +326,13 @@ def translate_batch(batch, client):
 
 def add_translations(items, api_key):
     try:
-        import anthropic
+        import google.generativeai as genai
     except ImportError:
-        print("  anthropic not installed, skipping translation")
+        print("  google-generativeai not installed, skipping translation")
         return
 
-    client = anthropic.Anthropic(api_key=api_key)
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel("gemini-1.5-flash")
     total = len(items)
 
     for start in range(0, total, TRANSLATE_BATCH):
@@ -344,7 +340,7 @@ def add_translations(items, api_key):
         end = start + len(batch)
         print(f"  Translating {start+1}-{end}/{total}...")
         try:
-            results = translate_batch(batch, client)
+            results = translate_batch(batch, model)
             for j, t in enumerate(results):
                 if j < len(batch):
                     batch[j]["title_zh"] = t.get("title_zh", "")
@@ -387,13 +383,13 @@ def main():
     # Sort newest first
     unique.sort(key=lambda x: x["published_at"], reverse=True)
 
-    # Translate (requires ANTHROPIC_API_KEY)
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    # Translate (requires GEMINI_API_KEY)
+    api_key = os.environ.get("GEMINI_API_KEY")
     if api_key:
-        print(f"\nTranslating {len(unique)} items with Claude...")
+        print(f"\nTranslating {len(unique)} items with Gemini...")
         add_translations(unique, api_key)
     else:
-        print("\nNo ANTHROPIC_API_KEY — skipping translation")
+        print("\nNo GEMINI_API_KEY — skipping translation")
 
     os.makedirs("data", exist_ok=True)
     output = {
