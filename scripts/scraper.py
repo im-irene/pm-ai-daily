@@ -298,17 +298,19 @@ def translate_batch(batch, client):
     lines = []
     for i, item in enumerate(batch):
         lines.append(f"{i+1}. 標題: {item['title']}")
-        if item.get("summary"):
-            lines.append(f"   摘要: {item['summary'][:200]}")
+        # Prefer full article body over short RSS excerpt
+        body = (item.get("body_text") or item.get("summary", "")).strip()
+        if body:
+            lines.append(f"   內文: {body[:1500]}")
 
     prompt = (
         "你是台灣科技媒體編輯，請針對以下每篇文章完成兩件事：\n\n"
         "1. title_zh：\n"
         "   - 若標題為英文 → 翻譯成自然流暢的繁體中文（符合台灣媒體風格）\n"
         "   - 若標題為中文 → 直接使用原標題，若為簡體則轉為繁體\n"
-        "2. summary_zh：以讀完整篇文章的角度，用繁體中文撰寫 3-4 句的閱讀總結。\n"
+        "2. summary_zh：根據提供的文章內文，用繁體中文撰寫 3-4 句的閱讀總結。\n"
         "   內容需涵蓋：文章核心論點、關鍵數據或事件、以及對 PM 或 AI 從業者的實際意義。\n"
-        "   請用自己的理解與判斷撰寫，而非翻譯或複製原文描述。\n\n"
+        "   請用自己的理解與判斷撰寫，勿直接複製原文句子。\n\n"
         "直接回傳 JSON array，不加任何說明文字：\n"
         '[{"title_zh": "...", "summary_zh": "..."}, ...]\n\n'
         "文章列表：\n" + "\n".join(lines)
