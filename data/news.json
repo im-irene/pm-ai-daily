@@ -1,7 +1,23 @@
 {
-  "updated_at": "2026-05-14T01:54:43.284227+00:00",
-  "total": 186,
+  "updated_at": "2026-05-14T02:08:34.571213+00:00",
+  "total": 184,
   "items": [
+    {
+      "id": "rss_3bcdd318",
+      "title": "閱讀能力太差，美研究：學生成績倒退十年",
+      "url": "https://technews.tw/2026/05/14/reading-ability-get-worse-in-decades/",
+      "source": "科技新報",
+      "source_type": "rss",
+      "category": "ai",
+      "content_type": "產業新聞",
+      "published_at": "2026-05-14T01:55:02+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "智慧手機出現後，全世界都進入閱讀能力大倒退的時代。這幾年美國教師稱許多學生缺乏閱讀和理解能力，甚至對學生識字率 [&#8230;]",
+      "body_text": "智慧手機出現後，全世界都進入閱讀能力大倒退的時代。這幾年美國教師稱許多學生缺乏閱讀和理解能力，甚至對學生識字率 [&#8230;]",
+      "title_zh": "",
+      "summary_zh": ""
+    },
     {
       "id": "rss_fec2c5e8",
       "title": "思科財報優、大幅裁員聚焦 AI  盤後飆 21%",
@@ -1843,22 +1859,6 @@
       "summary_zh": ""
     },
     {
-      "id": "rss_2c70d3ff",
-      "title": "台美無人機新聯盟搶攻藍天法案！系統電挾「德州製造」插旗美國",
-      "url": "https://finance.technews.tw/2026/05/13/new-taiwan-us-drone-alliance/",
-      "source": "科技新報",
-      "source_type": "rss",
-      "category": "ai",
-      "content_type": "產業新聞",
-      "published_at": "2026-05-13T09:29:23+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "系統電近期積極布局 AI 邊緣運算應用市場，其中無人機業務被視為 AI 算力技術延伸應用中，最具成長潛力的核心 [&#8230;]",
-      "body_text": "系統電近期積極布局 AI 邊緣運算應用市場，其中無人機業務被視為 AI 算力技術延伸應用中，最具成長潛力的核心 [&#8230;]",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_af7d4289",
       "title": "Salesforce推出Agentforce Operations，以AI代理自動化企業後臺流程",
       "url": "https://www.ithome.com.tw/news/175746",
@@ -2079,6 +2079,22 @@
       "comments": 0,
       "summary": "李彦宏提出“AI时代进化论”",
       "body_text": "李彦宏提出“AI时代进化论”",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_d6bcda7b",
+      "title": "SideNotes",
+      "url": "https://www.producthunt.com/products/sidenotes-3",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-13T04:42:25+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Take notes on your screen side\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/sidenotes-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a h",
+      "body_text": "Take notes on your screen side\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2403,22 +2419,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_f21f56b2",
-      "title": "Googlebook",
-      "url": "https://www.producthunt.com/products/googlebook-2",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T21:33:07+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            A new kind of laptop designed for Gemini Intelligence\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/googlebook-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "A new kind of laptop designed for Gemini Intelligence\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "hn_48113419",
       "title": "OpenAI Sued over ChatGPT Medical Advice That Allegedly Killed College Student",
       "url": "https://futurism.com/artificial-intelligence/openai-sued-chatgpt-medical-advice-killed-student",
@@ -2531,22 +2531,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_64a0ea36",
-      "title": "Linchpin",
-      "url": "https://www.producthunt.com/products/linchpin-2",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T17:11:13+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Open-source, self-hostable runtime for managed AI agents\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/linchpin-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Open-source, self-hostable runtime for managed AI agents\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "hn_48111097",
       "title": "Microsoft's $1B AI data center will \"switch off half of Kenya\"",
       "url": "https://www.windowscentral.com/artificial-intelligence/kenya-president-warns-microsofts-1-billion-ai-data-center-will-switch-off-half-the-country",
@@ -2575,22 +2559,6 @@
       "comments": 40,
       "summary": "",
       "body_text": "",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_995ad886",
-      "title": "Skyty Wall",
-      "url": "https://www.producthunt.com/products/skyty-wall",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T16:34:17+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Turn any spare iPad into an ambient flight board\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/skyty-wall?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
-      "body_text": "Turn any spare iPad into an ambient flight board\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2627,6 +2595,22 @@
       "summary_zh": ""
     },
     {
+      "id": "producthunt_19cf447d",
+      "title": "WhoAmILookingFor",
+      "url": "https://www.producthunt.com/products/whoamilookingfor",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T14:39:02+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Find the right person in your LinkedIn network\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/whoamilookingfor?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Find the right person in your LinkedIn network\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
       "id": "hn_48108778",
       "title": "Show HN: Statewright – Visual state machines that make AI agents reliable",
       "url": "https://github.com/statewright/statewright",
@@ -2639,6 +2623,22 @@
       "comments": 51,
       "summary": "",
       "body_text": "",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_ea0a8433",
+      "title": "Jootle",
+      "url": "https://www.producthunt.com/products/jootle",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T13:11:31+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            The AI-Native Operations Platform\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/jootle?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a hre",
+      "body_text": "The AI-Native Operations Platform\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2707,22 +2707,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_bba5fc18",
-      "title": "Plate",
-      "url": "https://www.producthunt.com/products/plate-4",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T09:13:15+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Minimal project management for small teams\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/plate-4?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
-      "body_text": "Minimal project management for small teams\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_75e0c141",
       "title": "前 OpenAI CTO 領軍新創 Thinking Machines 發表互動模型，讓 AI 可以邊聽、邊看、邊回應",
       "url": "https://techorange.com/2026/05/12/thinking-machines-ai-interaction-model/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
@@ -2735,22 +2719,6 @@
       "comments": 0,
       "summary": "<p>前 OpenAI 技術長 Mira Murati 創辦的 Thinking Machines Lab 近日發表「互動模型」（interaction models）的研究預覽。這項研究的出發點在於，現有 AI 模型多半仍停留在「回合制」的互動模式，也就是使用者必須完整說完話或打完字，模型才開始處理，然而在模型生成回覆的期間，AI 的感知會完全凍結，無法持續接收新資訊或察覺使用者當下的狀態。 Thinking Machines 認為，這種單線式的互動不僅限縮人類知識、意圖與判斷傳遞給模型的空間，也讓 AI 的工作過程更難被使用者即時理解與修正。因此 Thinking Machines 期待",
       "body_text": "前 OpenAI 技術長 Mira Murati 創辦的 Thinking Machines Lab 近日發表「互動模型」（interaction models）的研究預覽。這項研究的出發點在於，現有 AI 模型多半仍停留在「回合制」的互動模式，也就是使用者必須完整說完話或打完字，模型才開始處理，然而在模型生成回覆的期間，AI 的感知會完全凍結，無法持續接收新資訊或察覺使用者當下的狀態。 \n\n Thinking Machines 認為，這種單線式的互動不僅限縮人類知識、意圖與判斷傳遞給模型的空間，也讓 AI 的工作過程更難被使用者即時理解與修正。因此 Thinking Machines 期待 AI 應該像人與人協作一樣自然，能夠持續接收語音、影像與文字，並能即時思考、回應與行動。 \n\n 200 毫秒一個 micro-turn，讓 AI 可以更快速產生反應 \n\n 為了打破上述瓶頸，Thinking Machines 試圖將「互動」變成模型的原生能力，而非僅在文字模型外加上一層語音辨識的包裝。Thinking Machines 的做法是將互動拆解為每 200 毫秒（200ms）一個的「micro-turn」。在這套架構下，模型接收的是連續不斷的串流，並在連續的時間軸上交錯且同時處理輸入與輸出，不再等待完整一輪對話結束。這就代表沉默、重疊說話、插話與視覺線索，都能直接成為模型判斷何時回應、何時等待的上下文。 \n\n Thinking Machines 指出，這套架構讓互動模型能做到無縫的對話管理、語音與視覺的插話、同步說話與時間感知，甚至可以在對話中同時進行搜尋、呼叫工具或生成 UI。《The Verge》也舉出相關展示案例，像是模型能在聽故事時辨識提及的動物、即時翻譯語音，或者在看到使用者駝背時主動出聲提醒。  \n\n \n\n \n\n 一邊對話一邊思考的「雙模型架構」 \n\n 為了要讓 AI 能在極短時間內反應，同時又能處理複雜任務，Thinking Machines 採用了「互動模型」與「背景模型」協同運作的雙模型架構。前端的互動模型負責維持與使用者的即時交流，當任務需要更長時間的深度推理時，互動模型不會讓使用者陷入漫長的等待，而是將完整的對話脈絡交給非同步的背景模型處理。 \n\n 當背景結果產生時，互動模型會將其自然地編織進當下的對話中。這種分工機制讓 AI 有機會一邊聽取使用者回饋、一邊執行複雜任務，讓使用者同時享有極低延遲的回應，以及推理模型在規劃與代理工作流（agentic workflows）上的強大能力，這也創造出了一種更接近「協作」而非單純「提示詞輸入」的體驗。 \n\n 效能數據亮眼，但距離成熟產品仍有挑戰 \n\n 在效能表現上，Thinking Machines 公布的基準測試展現雙模型架構的潛力。例如 TML-Interaction-Small 模型在 FD-bench v1 的輪流發言延遲（turn-taking latency）僅需 0.40 秒，優於 GPT-realtime-2.0 minimal 的 1.18 秒與 Gemini-3.1-flash-live minimal 的 0.57 秒。在衡量平均互動品質的 FD-bench v1.5 中，該模型獲得 77.8 分，同樣大幅領先競品。 \n\n 除了標準化測試，官方還發布自建的 TimeSpeak、CueSpeak、RepCount-A、ProactiveVideoQA 與 Charades 等內部評測。這些測試顯示，這款互動模型不僅能在使用者指定的時間點主動發言，還能展現「視覺主動性」（Visual proactivity），例如即時追蹤並計算影片中的連續動作次數，這都是目前其他企業難以做到的。 \n\n 不過，《Implicator.ai》提醒，這些亮眼數據皆為公司自行公布，且在影音問答（QIVD）準確率上，TML-Interaction-Small（54.0 分）並未勝過 GPT-realtime-2.0 minimal（57.5 分），顯示其優勢目前主要集中在互動品質與低延遲，而非所有能力皆全面領先。 \n\n 《Implicator.ai》進一步指出這項技術目前的運算瓶頸：TML-Interaction-Small 是一個擁有 276B 參數、12B 活躍參數的 MoE 系統，Thinking Machines 坦承，目前更大的預訓練模型運算速度仍太慢，還無法在這種即時互動的設定中提供服務。 \n\n 儘管 OpenAI 與 Google 都已經推出具備即時語音能力的 AI，但 Thinking Machines 這次發表的重點在於對系統底層架構的革新。這也呼應 Thinking Machines 的核心主張：「要讓互動性隨著智慧擴展，它必須成為模型本身的一部分。」這次技術創新特別值得關注的是，AI 介面正試圖擺脫傳統的外部語音包裝，走向真正的原生互動，也讓未來的 AI 更有機會從「使用者下指令、模型回覆」的被動工具，變成「邊聽、邊看、邊協作」的新工作夥伴。 \n\n ＊本文開放合作夥伴轉載，資料來源： Thinking Machines Lab 、 《VentureBeat》 、 《The Verge》 、 《implicator.ai》 ，首圖來源：AI 工具生成",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_dc36893f",
-      "title": "ScoutFox",
-      "url": "https://www.producthunt.com/products/scoutfox",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T07:11:52+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Tracks company behavior to find early signals and outliers\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/scoutfox?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Tracks company behavior to find early signals and outliers\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
