@@ -218,7 +218,7 @@ function renderDetail(item) {
     <h2 class="detail-title">${esc(mainTitle)}</h2>
     ${subTitle ? `<div class="detail-title-en">${esc(subTitle)}</div>` : ''}
     <div class="detail-divider"></div>
-    <div class="detail-summary-label">Claude 閱讀總結</div>
+    <div class="detail-summary-label">Gemini 閱讀總結</div>
     ${summaryText
       ? `<div class="detail-summary">${esc(summaryText)}</div>`
       : `<div class="detail-summary-empty">總結將於下次更新後生成</div>`
