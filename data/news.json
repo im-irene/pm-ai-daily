@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-14T01:25:14.691288+00:00",
-  "total": 183,
+  "updated_at": "2026-05-14T01:29:37.552033+00:00",
+  "total": 182,
   "items": [
     {
       "id": "rss_d41cddea",
@@ -287,6 +287,22 @@
       "comments": 0,
       "summary": "<p>Good news, OpenClaw fans — you can once again use your Claude AI subscription to power the hit, open source, autonomous AI agentic harness! But, there&#x27;s a big catch with how it&#x27;s being enacted. </p><p>A few hours ago, <a href=\"https://x.com/ClaudeDevs/status/2054610152817619388\">Anthrop",
       "body_text": "Good news, OpenClaw fans — you can once again use your Claude AI subscription to power the hit, open source, autonomous AI agentic harness! But, there's a big catch with how it's being enacted. A few hours ago, Anthropic announced via its official developer communications account on X, @ClaudeDevs , that it is changing its Claude paid subscription tiers, introducing a new subcategory of \"Agent SDK\" credits for all paid subscribers, which they can now allocate specifically for \"programmatic\" uses, including external, third-party agents such as OpenClaw. The move is a major reversal from the Anthropic's policy introduced in early April 2026 that expressly prohibited its AI subscriptions from being used to power these kind of non-Anthropic agents and harnesses, after Anthropic said they caused capacity and service issues. The problem was that some Claude subscribers were paying $20 to $200 per month under Anthropic's Claude Pro and Max subscriptions, but consuming hundreds, even thousands of dollars of tokens (units of information) above those prices through their OpenClaw (and similar autonomous) agents. This was an unsustainable position for Anthropic's finances and its limited compute infrastructure for inferencing the models to end users. To be clear, even when it enacted the old prohibition against OpenClaw and similar agents last month, Anthropic never fully cut off the capability for Claude to be used in OpenClaw. Rather, it redirected users to pay through the company's application programming interface (API) , which is billed by usage (priced per million tokens, rather than a flat monthly rate as the subscriptions offer), or pay for extra usage credits atop their subscriptions. Now, Anthropic is giving Claude subscribers another way to use their subscription bill to pay for third-party agents. However, the restoration comes with a significant catch: programmatic usage is no longer subsidized by the general subscription pool but is instead restricted to a fixed, non-rollover monthly credit, also worth $20-$200 depending on your Claude plan, and billed at the API rates. In other words, if you don't end up using these new Agent SDK credits, they simply expire at the end of the month. And if you do use them all up, you cannot dip into your general subscription usage limits to cover any additional usage — you'll need to buy extra usage credits instead. Why did Anthropic block Claude subscriptions from OpenClaw (and other third-party agentic AI harnesses) in the first place? To understand why this restoration matters, one must look at the technical friction that led to the initial ban on April 4, 2026. Anthropic’s first-party tools, such as Claude Code and Claude Cowork, are engineered to maximize \"prompt cache hit rates\"—a method of reusing previously processed text to save on expensive compute cycles. Third-party tools like OpenClaw, which allow users to run autonomous agents through external services like Discord or Telegram, were often unoptimized for these efficiencies.Boris Cherny, Head of Claude Code, noted that these third-party services were \"really hard for us to do sustainably\" because they bypassed the caching mechanisms that allow Anthropic to offer flat-rate subscriptions. The sheer volume of data being re-processed by inefficient agents was threatening the stability of the system for the broader user base. Even with Anthropic’s massive expansion into new hardware—including access to the 300MW Colossus 1 data center and its 220,000+ GPUs—the demand for agentic workflows was outpacing sustainable supply. The new \"Agent SDK credit\" system solves this technical bottleneck by shifting the cost of inefficiency back to the user. By providing a dedicated dollar-amount credit, Anthropic no longer has to \"eat the difference\" on unoptimized third-party code. If an agent is inefficient and burns through tokens, it simply drains the user's new $20 to $200 Agent SDK credit budget faster, rather than exceeding the value of Anthropic's fixed monthly subscription tiers. Anthropic's new programmatic credit system The restoration of third-party access is segmented across Anthropic’s billing tiers, creating a new hierarchy of \"programmatic power.\" Here's how much Anthropic is giving each user in terms of the new Agent SDK credits (in addition to their normal Claude usage through Anthropic Claude products like Claude Code, Claude Cowork etc). Plan Monthly, Dedicated Agent SDK Credit (on top of existing subscription plans) Usage Context Pro $20 Individual scripts and light SDK use. Max 5x $100 Moderate agentic automation. Max 20x $200 Professional-grade dev environments. Team (Premium) $100 / seat Collaborative team automation. Enterprise (Premium) $200 / seat Seat-based high-scale enterprise use. This system introduces a sharp divide between \"interactive\" and \"programmatic\" workflows. If you are chatting with Claude in a browser or using Claude Code in a terminal to write code interactively, you are still drawing ",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "reddit_60b7f011",
+      "title": "Please stop with the movie posters....",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1tcepgu/please_stop_with_the_movie_posters/",
+      "source": "r/ChatGPT",
+      "source_type": "reddit",
+      "category": "ai",
+      "content_type": "社群討論",
+      "published_at": "2026-05-13T22:12:09+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/ChatGPT/comments/1tcepgu/please_stop_with_the_movie_posters/\"> <img alt=\"Please stop with the movie posters....\" src=\"https://preview.redd.it/40k93ppxaz0h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=0fef31a3d7bc06611478bf64377dd73a066659b1\" ti",
+      "body_text": "This trend is so lame. &#32; submitted by &#32; /u/Puzzled-Instance3211 [link] &#32; [comments]",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -1715,22 +1731,6 @@
       "summary_zh": ""
     },
     {
-      "id": "reddit_ee2e45be",
-      "title": "We've got it all mixed up",
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1tbtv67/weve_got_it_all_mixed_up/",
-      "source": "r/ChatGPT",
-      "source_type": "reddit",
-      "category": "ai",
-      "content_type": "社群討論",
-      "published_at": "2026-05-13T08:51:49+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/ChatGPT/comments/1tbtv67/weve_got_it_all_mixed_up/\"> <img alt=\"We've got it all mixed up\" src=\"https://preview.redd.it/3dvotms1cv0h1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a97bc23eca7e8740f2dd50f59fda49be54f83bdd\" title=\"We've got it all m",
-      "body_text": "No comment needed &#32; submitted by &#32; /u/irelatetolevin [link] &#32; [comments]",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_8f38aace",
       "title": "林俊旸果然创业了！一个“Qwen负责人”头衔值135亿",
       "url": "https://www.qbitai.com/2026/05/416963.html",
@@ -1939,22 +1939,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_6575eaf5",
-      "title": "PitchDrop.ai",
-      "url": "https://www.producthunt.com/products/pitchdrop-ai",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-13T05:41:51+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Turn your pitch into a live, branded URL that wins deals\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/pitchdrop-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Turn your pitch into a live, branded URL that wins deals\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_700c530a",
       "title": "AI拿婚外情写勒索邮件，查一年告诉我科幻小说教坏的",
       "url": "https://www.qbitai.com/2026/05/416831.html",
@@ -2015,6 +1999,22 @@
       "comments": 0,
       "summary": "李彦宏提出“AI时代进化论”",
       "body_text": "李彦宏提出“AI时代进化论”",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_d6bcda7b",
+      "title": "SideNotes",
+      "url": "https://www.producthunt.com/products/sidenotes-3",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-13T04:42:25+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Take notes on your screen side\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/sidenotes-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a h",
+      "body_text": "Take notes on your screen side\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2111,6 +2111,22 @@
       "comments": 0,
       "summary": "企業自動化廠商UiPath宣布推出UiPath for Coding Agents，將Claude Code與OpenAI Codex這類AI程式開發代理工具整合進自家平臺，讓企業可用這些工具建立自動化流程，再由UiPath平臺納入測試、部署、執行、權限控管與稽核流程。",
       "body_text": "企業自動化廠商UiPath宣布推出UiPath for Coding Agents，將Claude Code與OpenAI Codex這類AI程式開發代理工具整合進自家平臺，讓企業可用這些工具建立自動化流程，再由UiPath平臺納入測試、部署、執行、權限控管與稽核流程。",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_b720b1bc",
+      "title": "Blaze 2.0",
+      "url": "https://www.producthunt.com/products/blaze-5",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-13T04:02:47+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            AI marketer for SMBs complete w/ strategy, content, and ads\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/blaze-5?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "AI marketer for SMBs complete w/ strategy, content, and ads\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2323,22 +2339,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_6442bad4",
-      "title": "Fide Shopify App",
-      "url": "https://www.producthunt.com/products/shoppable-videos-ugc",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T22:52:20+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Show shoppable UGC videos on your Shopify store\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/shoppable-videos-ugc?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Show shoppable UGC videos on your Shopify store\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "hn_48115520",
       "title": "Loading/running every LLM with 4M ctx in 3 clicks",
       "url": "https://old.reddit.com/r/Hugston/comments/1tbgrbb/4_million_ctx_for_every_ai_llm_model/",
@@ -2355,34 +2355,18 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_8fa8117c",
-      "title": "Mi",
-      "url": "https://www.producthunt.com/products/mi",
+      "id": "producthunt_f21f56b2",
+      "title": "Googlebook",
+      "url": "https://www.producthunt.com/products/googlebook-2",
       "source": "Product Hunt",
       "source_type": "producthunt",
       "category": "ai",
       "content_type": "產品發布",
-      "published_at": "2026-05-12T22:32:34+00:00",
+      "published_at": "2026-05-12T21:33:07+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<p>\n            30-line zero-config CLI agent for bug fixes + refactoring\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/mi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "30-line zero-config CLI agent for bug fixes + refactoring\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_e458aedb",
-      "title": "Mnara",
-      "url": "https://www.producthunt.com/products/mnara-macos-system-monitor",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T21:54:47+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Live Mac metrics in your menu bar\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/mnara-macos-system-monitor?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Live Mac metrics in your menu bar\n \n \n Discussion \n |\n Link",
+      "summary": "<p>\n            A new kind of laptop designed for Gemini Intelligence\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/googlebook-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "A new kind of laptop designed for Gemini Intelligence\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2483,6 +2467,22 @@
       "summary_zh": ""
     },
     {
+      "id": "producthunt_64a0ea36",
+      "title": "Linchpin",
+      "url": "https://www.producthunt.com/products/linchpin-2",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T17:11:13+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Open-source, self-hostable runtime for managed AI agents\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/linchpin-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Open-source, self-hostable runtime for managed AI agents\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
       "id": "hn_48111097",
       "title": "Microsoft's $1B AI data center will \"switch off half of Kenya\"",
       "url": "https://www.windowscentral.com/artificial-intelligence/kenya-president-warns-microsofts-1-billion-ai-data-center-will-switch-off-half-the-country",
@@ -2547,22 +2547,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_19cf447d",
-      "title": "WhoAmILookingFor",
-      "url": "https://www.producthunt.com/products/whoamilookingfor",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T14:39:02+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Find the right person in your LinkedIn network\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/whoamilookingfor?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Find the right person in your LinkedIn network\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "hn_48108778",
       "title": "Show HN: Statewright – Visual state machines that make AI agents reliable",
       "url": "https://github.com/statewright/statewright",
@@ -2575,22 +2559,6 @@
       "comments": 51,
       "summary": "",
       "body_text": "",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_ea0a8433",
-      "title": "Jootle",
-      "url": "https://www.producthunt.com/products/jootle",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T13:11:31+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            The AI-Native Operations Platform\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/jootle?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a hre",
-      "body_text": "The AI-Native Operations Platform\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2643,22 +2611,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_570c9964",
-      "title": "Whisper Internet Infra AI Context",
-      "url": "https://www.producthunt.com/products/whisper-internet-infra-ai-context",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T09:29:30+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Free MCP for security AI: live BGP, DNS, threat graph\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/whisper-internet-infra-ai-context?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">",
-      "body_text": "Free MCP for security AI: live BGP, DNS, threat graph\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_06473720",
       "title": "三星、現代皆押注：新創 Config 融資 2700 萬美元，要成為「機器人界台積電」",
       "url": "https://techorange.com/2026/05/12/koreas-manufacturers-config-tsmc-robot-data/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
@@ -2671,6 +2623,22 @@
       "comments": 0,
       "summary": "<p>隨著實體 AI 熱潮升溫，專注機器人訓練數據的新創 Config，獲三星、現代、LG 等南韓製造業資本押注。Config 將自身角色類比為台積電在晶片產業的定位：台積電為 Apple、NVIDIA、AMD 等企業代工晶片，但本身並不與客戶競爭，Config 希望在機器人領域專注提供訓練 AI 所需的數據，而非直接開發機器人產品。 機器人 AI 供應鏈成形？實體 AI 熱潮帶動 Config 估值破 2 億美元 《TechCrunch》指出，亞洲近年積極投入實體 AI（physical AI）與機器人技術，而背後推力，正是該地區累積的製造業實力。南韓、日本、中國與台灣皆以製造、出口與供應鏈",
       "body_text": "隨著實體 AI 熱潮升溫，專注機器人訓練數據的新創 Config，獲三星、現代、LG 等南韓製造業資本押注。Config 將自身角色類比為台積電在晶片產業的定位：台積電為 Apple、NVIDIA、AMD 等企業代工晶片，但本身並不與客戶競爭，Config 希望在機器人領域專注提供訓練 AI 所需的數據，而非直接開發機器人產品。 \n\n 機器人 AI 供應鏈成形？實體 AI 熱潮帶動 Config 估值破 2 億美元 \n\n 《TechCrunch》指出，亞洲近年積極投入實體 AI（physical AI）與機器人技術，而背後推力，正是該地區累積的製造業實力。南韓、日本、中國與台灣皆以製造、出口與供應鏈體系為經濟核心，這套產業基礎也延伸到 AI 領域，帶動機器人相關技術與資本加速發展。 \n\n 在這波趨勢下，新創公司 Config 於 2025 年成立，由前 Meta 研究員、前 TwelveLabs 首席科學家 Minjoon Seo 與來自 Waymo、Google、Naver 的團隊共同創辦。此次種子輪由三星創投領投，募資金額達 2700 萬美元，推升公司估值突破 2 億美元，累計募資達 3500 萬美元。 \n\n 參與投資者還包括現代汽車創投 ZER01NE Ventures、LG Technology Ventures、SKT America，以及 Mirae Asset Ventures、韓國開發銀行（KDB）等機構。《TechCrunch》說明，隨著越來越多大型製造商希望掌握自己的機器人 AI 技術，而非完全依賴外部供應商，這類「基礎供應商」模式開始受到市場關注。 \n\n 已開始有營收！Config 搶攻機器人訓練與雲端服務 \n\n Config 在首爾與河內設有數據生產據點，透過攝影棚與實地場景記錄人類執行各種動作，累積超過 10 萬小時的人類動作數據，規模是開源機器人資料集 AgiBot World 的 30 倍以上。Minjoon Seo 指出，相較於大型語言模型可直接利用網路文字訓練，機器人 AI 的訓練數據必須透過真實世界蒐集，不僅需要機器人設備與場地，還需要人員實際操作，因此成本遠高於純軟體 AI。 \n\n 此外，多數機器人公司會先用人類數據訓練模型，再讓模型適應機器人，但 Config 選擇在訓練前先「轉換數據」，讓資料本身更符合機器人的運動與互動方式。Minjoon Seo 將其比喻為語言翻譯：「如果只用英文教材教韓文，很難真正學好。」他認為，真正需要被轉換的其實是數據，而這正是 Config 的核心技術。 \n\n 目前 Config 已開始產生營收，客戶涵蓋大型製造商、系統整合商，以及農業、國防等產業。競爭對手則包括 Physical Intelligence、Generalist AI 與 Skild AI。《TechCrunch》指出，這筆資金將用於擴大韓國與越南的數據生產規模，目標累積 100 萬小時機器人訓練數據；同時推進企業平台業務，力拚 2027 年底達成 1000 萬美元 ARR（年經常性收入），並推出雲端機器人服務，讓企業不必自行部署運算設備，就能使用 Config 的機器人基礎模型。 \n\n ＊本文開放合作夥伴轉載，資料來源： 《TechCrunch》 、Config，圖片來源：Config。",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_921f2c1e",
+      "title": "claude-share",
+      "url": "https://www.producthunt.com/products/claude-share",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T08:51:44+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Securely share your Claude Code with your friends\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/claude-share?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Securely share your Claude Code with your friends\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2927,6 +2895,22 @@
       "comments": 0,
       "summary": "",
       "body_text": "",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_a3611a52",
+      "title": "AI meeting notes by Snaply",
+      "url": "https://www.producthunt.com/products/ai-dication-by-snaply",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-11T08:26:44+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Free & Private AI meeting notes for you Mac\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/ai-dication-by-snaply?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Free & Private AI meeting notes for you Mac\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     }
