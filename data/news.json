@@ -1,7 +1,23 @@
 {
-  "updated_at": "2026-05-14T01:06:46.139393+00:00",
-  "total": 182,
+  "updated_at": "2026-05-14T01:25:14.691288+00:00",
+  "total": 183,
   "items": [
+    {
+      "id": "rss_d41cddea",
+      "title": "騰訊 Q1 經調整獲利年增 11%；下半年加大 AI 投入",
+      "url": "https://finance.technews.tw/2026/05/14/tencent-announces-2026-first-quarter-results/",
+      "source": "科技新報",
+      "source_type": "rss",
+      "category": "ai",
+      "content_type": "產業新聞",
+      "published_at": "2026-05-14T01:10:01+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "綜合港媒及中媒報導，騰訊公布今年第一季營收 1,964.58 億元（人民幣，下同）、年增 9%，低於預期；淨利 [&#8230;]",
+      "body_text": "綜合港媒及中媒報導，騰訊公布今年第一季營收 1,964.58 億元（人民幣，下同）、年增 9%，低於預期；淨利 [&#8230;]",
+      "title_zh": "",
+      "summary_zh": ""
+    },
     {
       "id": "rss_c4f21b57",
       "title": "身分安全威脅成為勒索軟體主要侵入途徑，三分之二受害組織認為源頭是身分攻擊",
@@ -1101,8 +1117,8 @@
       "published_at": "2026-05-13T14:50:40+00:00",
       "score": 0,
       "comments": 0,
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Van Rooij, Guest, Adolfi, Kolokolova, and Rich <a href=\"https://link.springer.com/article/10.1007/s42113-024-00217-5\">claimed to have proven that AGI via ML is impossible</a> in <em>Computational Brain &amp; Behavior</em> in 2024. The basic idea was to try to reduce",
-      "body_text": "Van Rooij, Guest, Adolfi, Kolokolova, and Rich claimed to have proven that AGI via ML is impossible in Computational Brain &amp; Behavior in 2024. The basic idea was to try to reduce a known NP-hard problem to the problem of learning a human-level classifier from data. The purported result, called &quot;Ingenia Theorem&quot; by the authors, made some noise on the internet, including here. My paper showing that the proof is irreparably broken is now also out in CBB (ungated preprint here ). The basic issue is that &quot;human-level classifier&quot; is not mathematically defined, which the authors solve by ... never defining it. They have a construct that corresponds to &quot;distribution of human situation-behaviour tuples&quot; when they introduce the problem, but the construct then gets swapped out for &quot;for all polytime-sampleable distributions&quot; when it comes time to doing the formal proof. This means that the paper, if you find-and-replace human situation-behavior tuples for ImageNet inputs/labels, also proves that learning to classify ImageNet is intractable. Blogpost discussion similar attempts from Penrose to Chomsky here . &#32; submitted by &#32; /u/mike_uoftdcs [link] &#32; [comments]",
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Van Rooij, Guest, de Haan, Adolfi, Kolokolova, and Rich <a href=\"https://link.springer.com/article/10.1007/s42113-024-00217-5\">claimed to have proven that AGI via ML is impossible</a> in <em>Computational Brain &amp; Behavior</em> in 2024. The basic idea was to try",
+      "body_text": "Van Rooij, Guest, de Haan, Adolfi, Kolokolova, and Rich claimed to have proven that AGI via ML is impossible in Computational Brain &amp; Behavior in 2024. The basic idea was to try to reduce a known NP-hard problem to the problem of learning a human-level classifier from data. The purported result, called &quot;Ingenia Theorem&quot; by the authors, made some noise on the internet, including here. My paper showing that the proof is irreparably broken is now also out in CBB (ungated preprint here ). The basic issue is that &quot;human-level classifier&quot; is not mathematically defined, which the authors solve by ... never defining it. They have a construct that corresponds to &quot;distribution of human situation-behaviour tuples&quot; when they introduce the problem, but the construct then gets swapped out for &quot;for all polytime-sampleable distributions&quot; when it comes time to doing the formal proof. This means that the paper, if you find-and-replace human situation-behavior tuples for ImageNet inputs/labels, also proves that learning to classify ImageNet is intractable. Blogpost discussion similar attempts from Penrose to Chomsky here . &#32; submitted by &#32; /u/mike_uoftdcs [link] &#32; [comments]",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -1923,6 +1939,22 @@
       "summary_zh": ""
     },
     {
+      "id": "producthunt_6575eaf5",
+      "title": "PitchDrop.ai",
+      "url": "https://www.producthunt.com/products/pitchdrop-ai",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-13T05:41:51+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Turn your pitch into a live, branded URL that wins deals\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/pitchdrop-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Turn your pitch into a live, branded URL that wins deals\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
       "id": "rss_700c530a",
       "title": "AI拿婚外情写勒索邮件，查一年告诉我科幻小说教坏的",
       "url": "https://www.qbitai.com/2026/05/416831.html",
@@ -2083,22 +2115,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_b720b1bc",
-      "title": "Blaze 2.0",
-      "url": "https://www.producthunt.com/products/blaze-5",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-13T04:02:47+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            AI marketer for SMBs complete w/ strategy, content, and ads\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/blaze-5?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "AI marketer for SMBs complete w/ strategy, content, and ads\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_6e90bf3f",
       "title": "奥特曼趁马斯克出差爆猛料：他曾想让子女继承OpenAI",
       "url": "https://www.qbitai.com/2026/05/416739.html",
@@ -2127,22 +2143,6 @@
       "comments": 0,
       "summary": "<blockquote><p>当深夜成为情感代偿的黄金时段，韩国AI聊天应用正以惊人的商业表现改写市场规则。Zeta、Crack等产品通过游戏化设计、亚文化深耕和精品化体验，精准收割着为‘心动瞬间’付费的年轻用户。本文将深度解析这些应用如何将情感缺口转化为高溢价收入，以及它们如何依托韩国成熟的网漫付费生态构建商业护城河。</p>\n</blockquote><p><img class=\"aligncenter\" src=\"https://image.woshipm.com/2026/05/11/c30aeffe-4d3a-11f1-ae91-00163e4b86a1.jpg\" /></p>\n<p",
       "body_text": "当深夜成为情感代偿的黄金时段，韩国AI聊天应用正以惊人的商业表现改写市场规则。Zeta、Crack等产品通过游戏化设计、亚文化深耕和精品化体验，精准收割着为‘心动瞬间’付费的年轻用户。本文将深度解析这些应用如何将情感缺口转化为高溢价收入，以及它们如何依托韩国成熟的网漫付费生态构建商业护城河。 \n \n 凌晨往往是AI陪伴类应用的使用高峰。 \n 对于许多在高压环境下学习、工作的韩国年轻人来说，结束一天的日程安排后，卧室内的深夜时间成为了他们寻求情感补偿的窗口。与传统的社交软件不同，用户在这些AI应用中不再需要维持世俗的社交礼仪。他们与AI角色的对话往往围绕着琐碎的情绪释放、压力排解或特定的剧情互动。 \n 一段带着强烈偏袒色彩的回复、一次对琐碎情绪的深度共情、甚至是一句带有角色逻辑的“霸道安慰”，都给用户带来了满足私密、安全、独特性需求的情感体验。 \n 据2025年2月《韩国先驱报》报道，本地机构Embrain的调查数据显示，38%的青少年和42%的20多岁受访者表示，他们可以通过生成式AI进行有意义的情感交流。现实中的韩国年轻人正经历着“三抛”甚至“五抛”（抛弃恋爱、结婚、生子、人际关系、住房），当现实社交成本昂贵到无法负担，AI则成为了相对廉价且稳定的情感代糖，同时，受成熟的网漫和偶像养成文化影响，韩国用户对情感类消费的付费意愿较强。他们并不看重实际功能，却愿意为“心动”和“专属感”支付溢价。 \n 在韩国本土AI聊天应用市场中，Zeta是其中的“巨头”，其由Scatter Lab（曾开发AI聊天机器人Lee Luda的初创公司）推出。根据韩国移动应用分析机构WiseApp・Retail在2026年3月发布的最新报告，尽管Zeta在用户基数上与ChatGPT等全球巨头仍有明显差距，但数据显示，Zeta的2月总使用时长（约1.13亿小时）达到了ChatGPT韩国版的两倍以上。 \n 目前，在畅销榜中还有一款更晚推出的AI聊天应用크랙(以下称为：Crack)与Zeta打得火热。与Zeta在日本、韩国两个市场双线开花不同，Crack更加专注韩国本土市场的深耕。据《每日经济新闻》（MK News）报道，Crack在2026年2月的使用时长已达到988万小时，位列韩国市场前三，并创下上线以来的最高活跃纪录。 \n \n 5月11日APP Store韩国地区娱乐应用畅销榜排行。图源：点点数据 \n 点点数据显示，自2025年4月1日至2026年5月8日，Crack的应用端总收入达到了718万美元，且99%以上来自韩国市场。与其形成鲜明对比的，是Crack上线以来的总下载量仅约127万。这意味着Crack的单下载收入（ARPD）极高，精准验证了其针对高净值“情感刚需”人群的收割能力。 \n \n Crack上线以来的下载量与收入数据。图源：点点数据 \n 从这一角度看，韩国正在成为AI聊天的高净值市场。除了Crack之外，同样上线于2025年的AI聊天应用위프（以下称为：WHIF）、멜팅（以下称为：Melting）也在韩国市场取得了不错的收入，接下来，我们从Crack开始，看看这些应用是如何融入当地情感消费市场，构筑起自己的商业护城河的？ \n 01 从辅助功能到独立应用，游戏化设计圈粉韩国用户 \n 实际上，Crack背后的开发商是韩国AI公司Wrtn Technologies（以下简称Wrtn）。Wrtn成立于2021年，其在2023年上线了自己的核心AI平台Wrtn，最初，Wrtn在应用中上线了一个名为“Character Chat”的功能。出乎意料的是，这一原本作为辅助的功能却迅速带动了用户增长，尤其是Z世代用户的活跃时长。 \n \n 2025年4月，为进一步释放商业价值并深耕情感赛道，Wrtn正式将该功能拆分为独立应用“Crack”，面对韩国本土推出。得益于Wrtn的早期积累和针对韩语语境深度优化的模型能力，Crack在AI角色聊天内容上针对本土语境作出了优化。 \n 同时，Crack也进行了十分游戏化的设计。在Wrtn首席产品官李东宰的描述中，Crack的核心策略是将“AI聊天”变成了一场可以被进度条量化的恋爱RPG游戏。 \n 首先，打开Crack，屏幕上布满了各种AI角色的图像，用户像刷短视频一样下滑，看到心动的角色点进去就能开始聊天。这种“视觉先行”的设计，第一眼就抓住了对审美要求高的韩国年轻用户。 \n \n 其次是，Crack引入了一套细致的“好感度阶梯”系统。用户与AI的关系跟随聊天好感度逐级提升，被划分为从“陌生人”到“恋人”甚至“灵魂伴侣”等多个等级。 \n 在此基础上，Crack巧妙地抓住了付费点设置。当用户与AI角色的对话进入到一定阶段，比如AI准备发送一张专属的“生活照”时，屏幕上就会跳出解锁提示。 \n \n 此时，用户需要消耗虚拟币（Cracker）来解锁这些关键剧情或多元内容（如语音、立绘）。这种设计非常类似于乙女游戏的付费解锁卡面或网文的“付费解锁下一章”，让用户在情感最投入的时刻产生消费冲动。 \n 值得注意的是，在付费设计上，用户在移动端购买2000个Cracker的价格约为2800韩元（约2.1美元），而针对重度玩家的10万个点数大包定价则高达12.6万韩元（约93.3美元）。对比入门级2800韩元的档位，这种大额包的性价比更高，旨在锁定那些深度沉浸在AI剧情中的“核心付费用户”。 \n 为了留住高频互动的核心用户，Crack还推出了一项名为“超级通行证”的月度订阅服务。在移动端，该会员的价格定为每月12500韩元（约9.3美元）。订阅该权益后，用户不仅能获得每日登录赠送的免费Cracker，更重要的是可以解除普通角色的每日对话次数限制，并获得“长期记忆增强”功能，使AI角色能够记住数天前的对话细节。 \n 据《财富》杂志报道称，Wrtn目前在韩国和日本拥有超过500万月活跃用户，并计划在2026年中期进入美国市场。未来Crack的这套模式在美国市场的表现如何，能不能获得新的市场增量，仍值得进一步观望。 \n 02 先锁定文化圈层，再构建的AI聊天产品 \n 如果说Crack是专注韩国市场的典型，那么，接下来解析的WHIF则是聚焦细分圈层用户爆发的典型应用。点点数据显示，近30天来，WHIF在APP Store和Google Play两端总收入达到了24万美元，其中韩国地区占比70%，它精准收割了BL（Boys&#8217;Love，耽美）受众群体。 \n WHIF由韩国初创公司Bunker Kids开发。团队发现，传统通用AI聊天产品在处理BL等特定亚文化语境时，常出现人设崩坏、逻辑断裂或语气违和，因此WHIF采用“先锁定文化圈层，再构建AI角色”的思路，从立项起就聚焦BL垂直圈层，打造贴合亚文化语境的专属AI聊天服务。 \n 与单一的“好感度”不同，WHIF引入了爱情、执着、信赖、好感、厌恶、恐惧六个情感维度，旨在复刻BL创作中常见的“强取豪夺”等高张力关系。当对话陷入平淡时，应用会主动提议插入一段“冲突”或“意外事件”。用户可以像导演一样选择接受或拒绝，这种逻辑将AI聊天从简单的“对话”拉升到了“互动创作”的维度。 \n \n 除此之外，WHIF与韩国热门BL网文、Webtoon（网络条漫）版权方及工作室合作，引入官方授权的人气IP角色。这种“官方角色下场陪玩”的强背书，精准击中粉丝情感需求，显著提升了用户付费意愿与内购转化率。 \n 在商业化设计上，WHIF强调“分级体验”，应用提供了不同等级的AI模型选择，基于此，消耗的虚拟代币数量不同。用户通常以1900韩元（约1.4美元）起步充值点数。对于该BL网漫的受众群体来说，她们早已拥有在Webtoon平台积累下来的付费习惯，在WHIF中愿意为了解锁一个“名场面”而产生高频、小额的付费。 \n 03 韩系伪厚涂画风：两种模式+不同人设自由对话 \n Melting由韩国初创团队Watnee研发。该团队敏锐地捕捉到了传统文字AI的痛点——缺乏实体感与氛围感。因此，Melting的核心竞争力是利用高质量的AI绘图与语音技术，为用户构筑一个极具沉浸感的虚拟恋爱空间。 \n 相比于市面上以海量UGC（用户生成内容）角色取胜的平台，Melting走的是精品化“颜值风”。应用内AI角色的美术形象统一采用了“韩系伪厚涂”画风，整体视觉更贴近成熟乙女游戏、韩漫等作品，既规避了常见的AI角色风格参差不齐问题，又给平台打上了“重审美”的标签。 \n \n 在交互体验与留存设计上，Melting用户在与AI角色对话时，可以选择“情感模式”或“故事模式”。其中，情感模式基于系统预设的角色性格展开，单次对话消耗7个钻石；而故事模式则赋予了用户极高的自由度，允许其自主修改背景故事与剧情走向，单次对话消耗提升至9个钻石。 \n \n 同时，Melting允许用户创建多个不同的“个人资料”来与同一个角色对话。这一设计意味着，单一的AI角色资产可以通过切换不同的故事线与人设被反复消耗，拓宽了用户的付费深度。此外，应用在“Tags”页面中专门设立了“BL（Boys&#8217;Love）”专栏，用户可直接根据关键词检索角色，显示出该应用在维持大众审美基本盘的同时，也想收割高净值亚文化圈层流量的野心。 \n 在商业化设计中，用户充值100个钻石的价格在1800韩元（约1.3美元），100个钻石也只能进行11次故事模式的对话，这样下来，用户在日常的高频聊天中会通常会迅速消耗掉钻石。 \n 点点数据显示，自2025年6月应用上线至2026年5月8日，Melting在韩国市场的下载量约为12.8万，在韩国市场的总收入达到了112万。通过钻石这种高频消耗机制，Melting成功把情感陪伴转变成了高溢价的数字消费，实现了“小众但高收益”的商业闭环。 \n 04 结语 \n 从韩国AI聊天市场的商业表现来看，Crack、WHIF以及Melting等应用的走红，很大程度上得益于韩国用户长期以来在Webtoon和网文领域养成的付费习惯。这种“为剧情买单”、“为心动瞬间付费”的逻辑，在AI时代被自然地迁移到了对话框中。 \n 在“孤独经济”的影响下，用户的情感缺口正逐渐被这些“恰到好处”的AI角色所填充。对于很多韩国用户而言，付费解锁一次对话或一张立绘，可看作是延续一场数字化的情感体验。 \n 目前看来，这种建立在成熟内容消费土壤上的商业模式，依然具备相当的发展前景。AI聊天应用在韩国市场或许还将演化出更多细分的形态，进一步挖掘这一高净值市场的商业潜力。 \n 作者丨以南 编辑丨火狐狸 \n 本文由人人都是产品经理作者【扬帆出海】，微信公众号：【扬帆出海】，原创/授权 发布于人人都是产品经理，未经许可，禁止转载。 \n 题图来自Unsplash，基于 CC0 协议。",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_a0eab715",
-      "title": "Zen Reports",
-      "url": "https://www.producthunt.com/products/zen-reports",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-13T03:28:58+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            See how much traffic your website gets from ChatGPT\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/zen-reports?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "See how much traffic your website gets from ChatGPT\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2243,22 +2243,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_5f4e0cd4",
-      "title": "BossHogg",
-      "url": "https://www.producthunt.com/products/bosshogg",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "pm",
-      "content_type": "產品發布",
-      "published_at": "2026-05-13T01:45:29+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Agent-first CLI for PostHog analytics and feature flags\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/bosshogg?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Agent-first CLI for PostHog analytics and feature flags\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_3b9a7832",
       "title": "SAP公開自主企業布局，推動AI代理進入核心業務流程",
       "url": "https://www.ithome.com.tw/news/175760",
@@ -2339,6 +2323,22 @@
       "summary_zh": ""
     },
     {
+      "id": "producthunt_6442bad4",
+      "title": "Fide Shopify App",
+      "url": "https://www.producthunt.com/products/shoppable-videos-ugc",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T22:52:20+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Show shoppable UGC videos on your Shopify store\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/shoppable-videos-ugc?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Show shoppable UGC videos on your Shopify store\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
       "id": "hn_48115520",
       "title": "Loading/running every LLM with 4M ctx in 3 clicks",
       "url": "https://old.reddit.com/r/Hugston/comments/1tbgrbb/4_million_ctx_for_every_ai_llm_model/",
@@ -2355,6 +2355,38 @@
       "summary_zh": ""
     },
     {
+      "id": "producthunt_8fa8117c",
+      "title": "Mi",
+      "url": "https://www.producthunt.com/products/mi",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T22:32:34+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            30-line zero-config CLI agent for bug fixes + refactoring\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/mi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "30-line zero-config CLI agent for bug fixes + refactoring\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_e458aedb",
+      "title": "Mnara",
+      "url": "https://www.producthunt.com/products/mnara-macos-system-monitor",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T21:54:47+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Live Mac metrics in your menu bar\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/mnara-macos-system-monitor?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Live Mac metrics in your menu bar\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
       "id": "hn_48113419",
       "title": "OpenAI Sued over ChatGPT Medical Advice That Allegedly Killed College Student",
       "url": "https://futurism.com/artificial-intelligence/openai-sued-chatgpt-medical-advice-killed-student",
@@ -2367,22 +2399,6 @@
       "comments": 0,
       "summary": "",
       "body_text": "",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_0964a943",
-      "title": "Termux Lite",
-      "url": "https://www.producthunt.com/products/termux-lite",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "pm",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T19:04:47+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            A powerful SSH terminal with FTP & SFTP support\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/termux-lite?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
-      "body_text": "A powerful SSH terminal with FTP & SFTP support\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2499,22 +2515,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_ed167095",
-      "title": "Mycelis",
-      "url": "https://www.producthunt.com/products/mycelis",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-12T16:34:28+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            Serverless AI workspace with smart routing & MCP agents\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/mycelis?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "Serverless AI workspace with smart routing & MCP agents\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "rss_d38e3308",
       "title": "Running Claude Code or Claude in Chrome? Here's the audit matrix for every blind spot your security stack misses",
       "url": "https://venturebeat.com/security/claude-confused-deputy-audit-matrix-security-blind-spots",
@@ -2547,6 +2547,22 @@
       "summary_zh": ""
     },
     {
+      "id": "producthunt_19cf447d",
+      "title": "WhoAmILookingFor",
+      "url": "https://www.producthunt.com/products/whoamilookingfor",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T14:39:02+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Find the right person in your LinkedIn network\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/whoamilookingfor?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
+      "body_text": "Find the right person in your LinkedIn network\n \n \n Discussion \n |\n Link",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
       "id": "hn_48108778",
       "title": "Show HN: Statewright – Visual state machines that make AI agents reliable",
       "url": "https://github.com/statewright/statewright",
@@ -2559,6 +2575,22 @@
       "comments": 51,
       "summary": "",
       "body_text": "",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_ea0a8433",
+      "title": "Jootle",
+      "url": "https://www.producthunt.com/products/jootle",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T13:11:31+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            The AI-Native Operations Platform\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/jootle?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a hre",
+      "body_text": "The AI-Native Operations Platform\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2607,6 +2639,22 @@
       "comments": 0,
       "summary": "<!-- SC_OFF --><div class=\"md\"><p>I had a work version of GPT do a very simple spreadsheet summary task for me yesterday. It took it 5 minutes to do it. I could probably have done it myself in 30 or so minutes. The heavily subsidised token cost of that task? 10 dollars. That's with a 10x subsidy. Th",
       "body_text": "I had a work version of GPT do a very simple spreadsheet summary task for me yesterday. It took it 5 minutes to do it. I could probably have done it myself in 30 or so minutes. The heavily subsidised token cost of that task? 10 dollars. That's with a 10x subsidy. The actual compute cost was about 100 dollars. There's something seriously wrong there. It's going to crash and crash HARD. EDIT: cause people think i'm lying or are just interested. The spreadsheet had 45 sheets. Each sheet had roughly 500 x 50 populated cells. Formatting was not exactly standard across all sheets. The prompt was something like &quot;there is labelled column in each sheet, give me a simple list of all the items from all the sheets in that column and ignore duplicates.&quot; We can chose which model to use. The model I chose was one of the newer ones, I honestly can't remember which one, possibly GPT 5.3. It took 5 minutes or more to so and the stated cost for the task was 10 dollars, possibly even more. I can't recall the token amount. EDIT 2: I just asked web GPT to estimate the cost of the above on a newer version of GPT and it came back with 17 dollars for GPT 4 and above. Try it yourself. &#32; submitted by &#32; /u/reasonablejim2000 [link] &#32; [comments]",
+      "title_zh": "",
+      "summary_zh": ""
+    },
+    {
+      "id": "producthunt_570c9964",
+      "title": "Whisper Internet Infra AI Context",
+      "url": "https://www.producthunt.com/products/whisper-internet-infra-ai-context",
+      "source": "Product Hunt",
+      "source_type": "producthunt",
+      "category": "ai",
+      "content_type": "產品發布",
+      "published_at": "2026-05-12T09:29:30+00:00",
+      "score": 0,
+      "comments": 0,
+      "summary": "<p>\n            Free MCP for security AI: live BGP, DNS, threat graph\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/whisper-internet-infra-ai-context?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">",
+      "body_text": "Free MCP for security AI: live BGP, DNS, threat graph\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
@@ -2803,22 +2851,6 @@
       "summary_zh": ""
     },
     {
-      "id": "producthunt_9c825b56",
-      "title": "Polygram",
-      "url": "https://www.producthunt.com/products/polygram-4",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-11T21:26:17+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            AI-native design and coding app to build mobile & web apps\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/polygram-4?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "AI-native design and coding app to build mobile & web apps\n \n \n Discussion \n |\n Link",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
       "id": "hn_48099860",
       "title": "How to Fine-Tune LLMs on AMD Strix Halo",
       "url": "https://www.promptinjection.net/p/how-to-fine-tune-llms-on-amd-strix-halo-ryzen-ai-max-395-sft-lora",
@@ -2879,22 +2911,6 @@
       "comments": 0,
       "summary": "",
       "body_text": "",
-      "title_zh": "",
-      "summary_zh": ""
-    },
-    {
-      "id": "producthunt_bcaa061f",
-      "title": "Latitude for Claude Code",
-      "url": "https://www.producthunt.com/products/latitude-4",
-      "source": "Product Hunt",
-      "source_type": "producthunt",
-      "category": "ai",
-      "content_type": "產品發布",
-      "published_at": "2026-05-11T14:12:35+00:00",
-      "score": 0,
-      "comments": 0,
-      "summary": "<p>\n            See where Claude Code burns tokens. Hit your limits less.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/latitude-4?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>",
-      "body_text": "See where Claude Code burns tokens. Hit your limits less.\n \n \n Discussion \n |\n Link",
       "title_zh": "",
       "summary_zh": ""
     },
